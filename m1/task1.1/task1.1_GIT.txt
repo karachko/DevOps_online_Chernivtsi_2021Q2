@@ -1,0 +1,12 @@
+0788eb0 HEAD@{0}: checkout: moving from develop to master
+0788eb0 HEAD@{1}: commit (merge): Change file index.html
+6e62d2f HEAD@{2}: merge images: Fast-forward
+2f6c654 HEAD@{3}: checkout: moving from styles to develop
+97429ac HEAD@{4}: commit: Add files to styles
+f65bb98 HEAD@{5}: commit: Add files to styles
+2f6c654 HEAD@{6}: checkout: moving from develop to styles
+2f6c654 HEAD@{7}: checkout: moving from images to develop
+6e62d2f HEAD@{8}: commit: Change file index.html
+742e341 HEAD@{9}: commit: Add files to images
+2f6c654 HEAD@{10}: checkout: moving from develop to images
+2f6c654 HEAD@{11}: commit (initial): Add file to develop
