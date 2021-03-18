@@ -12,9 +12,11 @@ It allows you to link and integrate workflows into each other.
 3. Create the folder 
 - mk task1.1
 5. Open "Git Bash"  on your workstation and move to this folder (cd c:/Users/admin/task1.1)
-6. Clone repo to your workstation on your workstation 
+- git config --global user.name "karachko"
+- git config --global user.email karachkonatasha@ukr.net
+7. Clone repo to your workstation on your workstation 
 - git clone https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2.git
-7. *Create empty readme.txt file*
+8. *Create empty readme.txt file*
 - touch readme.txt
 9. *Make init commit*
 - git init
