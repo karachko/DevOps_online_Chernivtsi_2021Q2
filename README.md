@@ -74,17 +74,10 @@ The merge conflict
 - git checkout -b master
 - git merge develop
 17. *Push all your changes with all your branches to origin (git push origin --all)*
-- The error was appered ```
-fatal: 'origin' does not appear to be a git repository
-fatal: Could not read from remote repository.
-
-Please make sure you have the correct access rights
-and the repository exists.
-```
+- The error was appered ``` fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository. Please make sure you have the correct access rights and the repository exists.```
 - Fix this error 
-```
-git remote add origin https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2.git 
-```
+``` git remote add origin https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2.git ```
 - git push origin --all
 18. *Execute command “git reflog“ and save it content somewhere (not in
 repository) with filename “task1.1_GIT.txt”.*
