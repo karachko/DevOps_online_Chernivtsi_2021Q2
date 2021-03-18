@@ -53,7 +53,7 @@ Add the file style.css in folder styles
 - git checkout develop
 - git merge images
 - git merge styles
-- The merge conflict appeared after execution of this command
+- The merge conflict appeared after execution of the command "git merge styles"
 ```-$ git merge styles
 "Auto-merging index.html
 CONFLICT (content): Merge conflict in index.html
@@ -66,7 +66,7 @@ The merge conflict
 <link rel="stylesheet" href="styles/style.css">
 >>>>>>> styles
 ```
--  git add index.html
+- git add index.html
 - git commit -m "Change file index.html"
 - git merge styles
 
