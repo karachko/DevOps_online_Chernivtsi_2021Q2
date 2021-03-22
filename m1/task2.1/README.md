@@ -14,9 +14,13 @@ There are two types of hypervisor:
 There is no software or any operating system in between, hence the name bare-metal hypervisor. A Type 1 hypervisor is proven in providing excellent performance and stability since it does not run inside Windows or any other operating system.
 - **Type 2 Hypervisor**(Oracle VM VirtualBox,VMware Workstation Pro, Parallels Desktop) runs inside of an operating system of a physical host machine. This is why we call type 2 hypervisors – hosted hypervisors. As opposed to type 1 hypervisors that run directly on the hardware, hosted hypervisors have one software layer underneath.
  In this case we have:
+
 A physical machine.
+
 An operating system installed on the hardware (Windows, Linux, macOS).
+
 A type 2 hypervisor software within that operating system.
+
 The actual instances of guest virtual machines.
 
 ## PART 2. WORK WITH VIRTUALBOX ##
@@ -37,10 +41,15 @@ to file "V1-karachko.ova"[picture 1-1-7] . I Imported VM from V1-karachko.ova
 - I Configured the USB to connect the USB ports of the host machine to the VM [picture 2-2-2]
 - I configured a shared folder to exchange data between the virtual machine and the host. In the window of a running VM, I selected Shared Folders from the Devices menu, [picture 2-3] 
 - I Configured different network modes for VM1, VM2.
+
 On the VM "v1_karachko" i ecexuted command  sudo ip addr add 192.168.0.2/24 dev enp0s3
+
 On the VM "v2_karachko" i ecexuted command  sudo ip addr add 192.168.0.3/24 dev enp0s3
+
 On the VM's "v1_karachko"VM "v2_karachko" i configurated netwotk settings "Internal networking"[picture 2-4-3]
+
 I executed ping on the VM "v2_karachko" to VM "v1_karachko" [picture 2-2-4]
+
 The execution of the ping command was successful.
 
 3.1. lanched VBoxManage from the directory C:\Program Files\Oracle\VirtualBox
@@ -58,17 +67,30 @@ The execution of the ping command was successful.
 6. I recorded the date and time by executing the date command[picture 3-6]
 7. I Stopped and deleted  the created VM using commands("vagrant halt" and "vagrant destroy")
 8. I created your own Vagrant box 
-8.1. I made the folder of the project
+-  I made the folder of the project
+-  
 mkdir vagrant-box && cd vagrant-box
-8.2. I checked current boxes: 
+
+- I checked current boxes: 
+
 vagrant box list
-8.3. I created new box using Vagrant package"Nataliia_default_1616252756363_43060":
+
+- I created new box using Vagrant package"Nataliia_default_1616252756363_43060":
+
 vagrant package --base Nataliia_default_1616252756363_43060
-8.4. I added the image centos7 in the box as centos7-custom:
+
+- I added the image centos7 in the box as centos7-custom:
+
 vagrant box add centos7-custom package.box
-8.5. I executed the command(C:\Users\Nataliia\vagrant-box>vagrant box list)
+
+- I executed the command(C:\Users\Nataliia\vagrant-box>vagrant box list)
+
 centos/7            (virtualbox, 2004.01)
+
 centos7-custom      (virtualbox, 0)
+
 hashicorp/bionic64  (virtualbox, 1.0.282)
+
 hashicorp/precise64 (virtualbox, 1.1.0)
+
 The new box centos7-custom was apeared.
