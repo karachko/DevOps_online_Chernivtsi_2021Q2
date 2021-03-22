@@ -48,7 +48,7 @@ On the VM "v2_karachko" i ecexuted command  sudo ip addr add 192.168.0.3/24 dev 
 
 On the VM's "v1_karachko"VM "v2_karachko" i configurated netwotk settings "Internal networking"![picture 2-4-3](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m1/task2.1/2-4-3.png)
 
-I executed ping on the VM "v2_karachko" to VM "v1_karachko" ![picture 2-2-4](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m1/task2.1/2-2-4.png)
+I executed ping on the VM "v2_karachko" to VM "v1_karachko" ![picture 2-4-2](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m1/task2.1/2-4-2.png)
 
 The execution of the ping command was successful.
 
