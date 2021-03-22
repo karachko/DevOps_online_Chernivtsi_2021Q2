@@ -1,17 +1,18 @@
 #TASK 2.1#
 ##PART 1. HYPERVISORS##
-The most popular hypervisors for infrastructure virtualization are:
+
+**The most popular hypervisors for infrastructure** virtualization are:
  - VMware vSphere
  - Microsoft Hyper-V
  - Oracle VM Server
  - Red Hat KVM
  - Citrix XenServer
-The main differences of the most popular hypervisors
-there are two types of hypervisor
- - A bare-metal hypervisor (Type 1)(VMware v Sphere with ESX, KVM, Microsoft Hyper-V,Oracle VM) is a layer of software we install directly on top of a physical server and its underlying hardware.
+**The main differences of the most popular hypervisors**
+There are two types of hypervisor:
+ - **A bare-metal hypervisor (Type 1)**(VMware v Sphere with ESX, KVM, Microsoft Hyper-V,Oracle VM) is a layer of software we install directly on top of a physical server and its underlying hardware.
 There is no software or any operating system in between, hence the name bare-metal hypervisor. A Type 1 hypervisor is proven in providing excellent performance and stability since it does not run inside Windows or any other operating system.
-- Type 2 Hypervisor(Oracle VM VirtualBox,VMware Workstation Pro, Parallels Desktop) runs inside of an operating system of a physical host machine.
-This is why we call type 2 hypervisors – hosted hypervisors. As opposed to type 1 hypervisors that run directly on the hardware, hosted hypervisors have one software layer underneath. In this case we have:
+- **Type 2 Hypervisor**(Oracle VM VirtualBox,VMware Workstation Pro, Parallels Desktop) runs inside of an operating system of a physical host machine. This is why we call type 2 hypervisors – hosted hypervisors. As opposed to type 1 hypervisors that run directly on the hardware, hosted hypervisors have one software layer underneath.
+ In this case we have:
 A physical machine.
 An operating system installed on the hardware (Windows, Linux, macOS).
 A type 2 hypervisor software within that operating system.
