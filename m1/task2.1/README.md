@@ -52,7 +52,7 @@ I executed ping on the VM "v2_karachko" to VM "v1_karachko" [picture 2-2-4]
 
 The execution of the ping command was successful.
 
-3.1. lanched VBoxManage from the directory C:\Program Files\Oracle\VirtualBox
+3.1. I lanched VBoxManage from the directory C:\Program Files\Oracle\VirtualBox
  and executed basic commands-showvminfo, createvm, startvm, modifyvm [picture 3]
 
 
@@ -68,7 +68,7 @@ The execution of the ping command was successful.
 7. I Stopped and deleted  the created VM using commands("vagrant halt" and "vagrant destroy")
 8. I created your own Vagrant box 
 -  I made the folder of the project
--  
+
 mkdir vagrant-box && cd vagrant-box
 
 - I checked current boxes: 
