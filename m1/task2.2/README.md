@@ -2,14 +2,14 @@
 1.-3. I red the terms of Using the AWS Free Tier and the ability to control their own costs and Registered with AWS (first priority).
 4. 
 - I created my own VM in the AWS cloud and connect to it
-- I selected *Light sail* from *All services*
-- I selected platform *Linux/Unix* (1.jpg)![1.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m1/task2.2/1.jpg)
-- I downloaded *Default SSH key pair* (LightsailDefaultKey-eu-west-2.pem)
-- I pressed the button *Create Instance*
-- I selected new *Light sail instance* from Instances and selected *WorldPress-1*
-- From the drop-down list I select *Connect*(2.jpg)![2.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m1/task2.2/2.jpg)
-- I connected to the instance WorldPress-1(3.jpg)
-6. I selected EC2 from All services
+- I selected **Light sail** from **All services*#
+- I selected platform **Linux/Unix** (1.jpg)![1.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m1/task2.2/1.jpg)
+- I downloaded **Default SSH key pair** (LightsailDefaultKey-eu-west-2.pem)
+- I pressed the button **Create Instance**
+- I selected new **Light sail instance** from Instances and selected **WorldPress-1**
+- From the drop-down list I select **Connect**(2.jpg)![2.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m1/task2.2/2.jpg)
+- I connected to the instance **WorldPress-1**(3.jpg)![3.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m1/task2.2/3.jpg)
+5. I selected *EC2* from All services
 - I selected Key Pair from Network&Security and pressed Create key pair
 - I entered the Name-Ec2Key and File Format ppk and pressed Create key pair
 - I Opened the Amazon EC2 console
