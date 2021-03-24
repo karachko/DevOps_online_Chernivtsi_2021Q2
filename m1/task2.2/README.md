@@ -84,8 +84,8 @@ I  started with **Amazon Elastic Container Service (Amazon ECS) using Fargate**.
 I chose container **sample-app(image:httpd:2.4)**, pressed the button **Next**, selected Load Balancer type -**Application Load Balancer**, pressed the button **Create**. I pressed the button **View service** (17.jpg).![17.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m1/task2.2/17.jpg) I clicked the **EC2Co-Defau-V0B43JYXVZRL** in the Load Balancing(18.jpg)![18.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m1/task2.2/18.jpg). I selected **EC2Co-EcsEl-W62ISGHEKYA(EC2-Load Balancing-Load Balancers)**(19.jpg)![19.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m1/task2.2/19.jpg)
 and copied DNS name "EC2Co-EcsEl-W62ISGHEKYA-767129557.us-east-1.elb.amazonaws.com " in the browser. I opened that link(20.jpg)![20.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m1/task2.2/20.jpg)
 15.
-- I created the bucked with name-devopsnk.ua and AWS Region EU(Stockholm)(S3-Create bucket). In the S3-buckets I selected devopsnk.ua -Priorities.Under Static website hosting, I chose Edit. Under Static website hosting, I chose Enable. On the page Edit static website hosting, I checked the Static website hosting to Enable. I fulfilled fields(Index document-index.html, Error document-404.html).I pushed the button Save Changes
-- I chose the bucket devopsnk.ua in Amazon S3-buckets. I chose-Permision. Under Block public access (bucket settings), I choose Edit. I unchecked "Block all public access".I pushed the button Save Changes. Under Bucket Policy, I choose Edit.I copied the bucket policy, and paste it in the Bucket policy editor.``` {
+- I created the bucked with name-**devopsnk.ua** and AWS Region **EU(Stockholm)**(S3-Create bucket). In the S3-buckets I selected devopsnk.ua -**Priorities**. Under **Static website hosting**, I chose **Edit**. Under **Static website hosting**, I chose**Enable**. On the page **Edit static website hosting**, I checked the Static website hosting to **Enable**. I fulfilled fields with (**Index document-index.html, Error document-404.html**).I pushed the button **Save Changes**
+- I chose the bucket **devopsnk.ua** in **Amazon S3-buckets**. I chose-**Permision**. Under **Block public access** (bucket settings), I choose **Edit**. I unchecked "Block all public access".I pushed the button **Save Changes**. Under **Bucket Policy**, I choose **Edit**.I copied the bucket policy, and paste it in the Bucket policy editor **{
     "Version": "2012-10-17",
     "Statement": [
         {
@@ -100,11 +100,12 @@ and copied DNS name "EC2Co-EcsEl-W62ISGHEKYA-767129557.us-east-1.elb.amazonaws.c
             ]
         }
     ]
-}```
-I pushed the button Save Changes
-- I uploaded configured files(index.html, foto, style.css) and uploaded them to the bucket "devopsnk.ua"
-- I uploaded configured 404.html and uploaded it to the bucket "devopsnk.ua"
-- Under Static website hosting, I chose your Bucket website endpoint thttp://devopsnk.ua.s3-website.eu-north-1.amazonaws.com/.
+}**
+I pushed the button **Save Changes**
+- I uploaded configured files **(index.html, foto, style.css)** to the bucket "devopsnk.ua"
+- I uploaded configured 404.html to the bucket "devopsnk.ua"
+- Under **Static website hosting**, I chose my Bucket website endpoint **http://devopsnk.ua.s3-website.eu-north-1.amazonaws.com/**
+- I opened **http://devopsnk.ua.s3-website.eu-north-1.amazonaws.com/** in the browser
 
 
 
