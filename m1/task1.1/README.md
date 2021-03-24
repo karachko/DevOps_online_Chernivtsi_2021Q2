@@ -41,21 +41,21 @@ It allows you to link and integrate workflows into each other.
 - git commit -m "Change file index.html"
 12. I went back to develop branch.
  git checkout develop
-13. *Create branch with name “styles”. Checkout on it. Add styles folder with
-styles source inside it. Commit*
+13. I created branch with name “styles” and checkouted on it. I added styles folder with
+styles source inside it. I did Commit
 - git checkout -b styles
 - mkdir styles
-Add the file style.css in folder styles
+I added the file style.css in folder styles
 - git add styles/\*.*
 - git commit -m "Add files to styles"
-14. *Change your index.html. Commit.*
+14. I chanded my index.html. I did Commit
 - git add index.html
 - git commit -m "Change file index.html"
-15. *Merge two new branches into develop using git merge command.*
+15. I merged two new branches into develop using git merge command.
 - git checkout develop
 - git merge images
 - git merge styles
-- The merge conflict appeared after execution of the command "git merge styles"
+- The merge conflict had been appeared after execution of the command "git merge styles"
 ```-$ git merge styles
 "Auto-merging index.html
 CONFLICT (content): Merge conflict in index.html
@@ -68,20 +68,21 @@ The merge conflict
 <link rel="stylesheet" href="styles/style.css">
 >>>>>>> styles
 ```
+- I corrected the index.html
 - git add index.html
 - git commit -m "Change file index.html"
 - git merge styles
 
-16. *Merge develop into master.*
+16. I merged develop into master
 - git checkout -b master
 - git merge develop
-17. *Push all your changes with all your branches to origin (git push origin --all)*
-- The error was appered ``` fatal: 'origin' does not appear to be a git repository
+17. I pushed all your changes with all your branches to origin (git push origin --all)*
+- The error had been appered ``` fatal: 'origin' does not appear to be a git repository
 fatal: Could not read from remote repository. Please make sure you have the correct access rights and the repository exists.```
 - Fix this error 
 ``` git remote add origin https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2.git ```
 - git push origin --all
-18. *Execute command “git reflog“ and save it content somewhere (not in
+18. I executed command “git reflog“ and saved it content somewhere (not in
 repository) with filename “task1.1_GIT.txt”.*
 - git reflog >> task1.1_GIT.txt
 
