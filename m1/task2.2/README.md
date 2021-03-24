@@ -1,5 +1,5 @@
 # TASK 2.2 #
-1.-3. I red the terms of Using the AWS Free Tier and the ability to control their own costs and Registered with AWS (first priority)
+1. I red the terms of Using the AWS Free Tier and the ability to control their own costs and Registered with AWS (first priority)
 4. - I created my own VM in the AWS cloud and connect to it
 - I selected **Light sail** from **All services*#
 - I selected platform **Linux/Unix** (1.jpg)![1.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m1/task2.2/1.jpg)
