@@ -1,6 +1,7 @@
-
+# TASK 2.2 #
+1.-3. I Red the terms of Using the AWS Free Tier and the ability to control their own costs and Registered with AWS (first priority).
 4. I created my own VM in the AWS cloud and connect to it
-- I selected Light sail from All services
+- I selected *Light sail from All services
 - I selected platform Linux/Unix (1.jpg)
 - I downloaded Default SSH key pair (LightsailDefaultKey-eu-west-2.pem)
 - I pressed the button Create Instance
