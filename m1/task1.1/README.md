@@ -7,39 +7,39 @@ It allows you to link and integrate workflows into each other.
 -   faster product development and deployment
 
 ## Task 1
-1. Create the account "karachko" on the "Github". Install "Git for Windows" (https://git-scm.com/download/win) 
-2. Create the  new repo "DevOps_online_Chernivtsi_2021Q2" on the "Github"
-3. Create the folder 
+1. I created the account "karachko" on the "Github" and installed "Git for Windows" (https://git-scm.com/download/win) 
+2. I created the  new repo "DevOps_online_Chernivtsi_2021Q2" in the "Github"
+3. I created Create the folder in the "Git Bush"
 - mk task1.1
-5. Open "Git Bash"  on your workstation and move to this folder (cd c:/Users/admin/task1.1)
+5. I opened "Git Bash"  in my workstation and moved to this folder (cd c:/Users/admin/task1.1)
+- I configurated the variables in "Git Bash"
 - git config --global user.name "karachko"
 - git config --global user.email karachkonatasha@ukr.net
-7. Clone repo to your workstation on your workstation 
+7. I cloned repo to my workstation
 - git clone https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2.git
-8. *Create empty readme.txt file*
+8. I created the empty readme.txt 
 - touch readme.txt
-9. *Make init commit*
+9. I made git commit
 - git init
-10. *Create develop branch and checkout on it.* 
+10. I created the develop branch and checkouted on it.
 - git checkout -b develop
-11. *Create index.html empty file. Commit* 
+11. I created index.html empty file and did Commit 
 - touch index.html 
 - git add index.html 
 - git commit -m "Add file to develop"
 
-10. *Create branch with name “images”. Checkout on it. Add images folder with
-some images inside it. Commit.*
+10.I created branch with name “images” and checkouted on it. 
 - git checkout -b images
 - mkdir images
-- Add files( 0-04-0a-6decd25b097dbc48eddf0ad3537ea9314a5b20d1bd1be2bacac7c3b78b4e8c8d_62951ab.jpg  0-04-0537c2824fb2f941c06a8aa43c5e3fb6652fa156e868c8e1eb590dea42fb36b892_3f4a47b9.jpg) to the folder images
+- I added images folder with some images inside itand did Commit*Add files( 0-04-0a-6decd25b097dbc48eddf0ad3537ea9314a5b20d1bd1be2bacac7c3b78b4e8c8d_62951ab.jpg  0-04-0537c2824fb2f941c06a8aa43c5e3fb6652fa156e868c8e1eb590dea42fb36b892_3f4a47b9.jpg) to the folder images
 - git add images/\*.*
 - git commit -m "Add files to images"
-11. *Change your index.html. Add images source inside it. Commit.*
-   In the index.html write this code
+11. I changed my index.html and added images source inside it. I did Commit
+   In the index.html I wrote this code
      ```<img src="images/0-04-0a-6decd25b097dbc48eddf0ad3537ea9314a5b20d1bd1be2bacac7c3b78b4e8c8d_62951ab.jpg"> <img src="images/0-04-05-37c2824fb2f941c06a8aa43c5e3fb6652fa156e868c8e1eb590dea42fb36b892_3f4a47b9.jpg">```
 - git add index.html
 - git commit -m "Change file index.html"
-12. *Go back to develop branch.*
+12. I went back to develop branch.
  git checkout develop
 13. *Create branch with name “styles”. Checkout on it. Add styles folder with
 styles source inside it. Commit*
