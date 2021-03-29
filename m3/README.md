@@ -186,14 +186,14 @@ karachkodb.cfmlgo87dbxs.us-east-1.rds.amazonaws.com
  - I created the new database DATABASE1
 - CREATE DATABASE DATABASE1
  - I uploaded PHARMNETWORK_28032021.sql to DATABASE1
-mysql -u admin -p -h karachkodb.cfmlgo87dbxs.us-east-1.rds.amazonaws.com -D DATABASE1 < /home/karachko/PHARMNETWORK_28032021.sql 
+- mysql -u admin -p -h karachkodb.cfmlgo87dbxs.us-east-1.rds.amazonaws.com -D DATABASE1 < /home/karachko/PHARMNETWORK_28032021.sql 
 
 15. I executed SELECT operator
 - mysql -h karachkodb.cfmlgo87dbxs.us-east-1.rds.amazonaws.com -P 3306 -u admin -p
 - SELECT * FROM PHARMACY
 - ![selectfromfarmacy.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m3/selectfromfarmacy.jpg)
 16. I created the dump
-mysqldump --databases DATABASE1 -h karachkodb.cfmlgo87dbxs.us-east-1.rds.amazonaws.com -u admin -P 3306 -p > rds.sql
+- mysqldump --databases DATABASE1 -h karachkodb.cfmlgo87dbxs.us-east-1.rds.amazonaws.com -u admin -P 3306 -p > rds.sql
 - ![mysqldump.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m3/mysqldump.jpg)
 - The dump of Database1 had been created
 - ![rdssql.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m3/rdssql.jpg)
