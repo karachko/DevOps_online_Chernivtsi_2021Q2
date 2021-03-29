@@ -4,7 +4,7 @@
 1. I installed MySql server on Ubuntu 18.04
 - sudo apt update
 - sudo apt install mysql-server
-- I chekhed that mysql had been started 
+- I checked that mysql had been started 
 - sudo netstat -tap | grep mysql
 ```
 tcp        0      0 localhost:33060         0.0.0.0:*               LISTEN      3143/mysqld
@@ -175,12 +175,12 @@ karachkodb.cfmlgo87dbxs.us-east-1.rds.amazonaws.com
 14.
 - On my VM with Ubuntu in CLI (to connected with my Amazon RDS karachkodb)i entered 
  mysql -h karachkodb.cfmlgo87dbxs.us-east-1.rds.amazonaws.com -P 3306 -u admin -p
-- I saccesefuly lanched in mysql  
+- I successfully lanched in mysql  
 - I checked (Did the base karachkodb exist?).SHOW databases; ![show-database.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m3/show-database.jpg)
 
 
 
-- The karachkodb had not existed. I tried to create my database on AWS RDW in any ways, but the karachkodb had not existed. I thought maybe it was the Frie Tier version. This is did not allow to show the databases(or it was the error in AWS RDS). All my settings in AWS RDS were from the instractions from the AWS site.
+- The karachkodb had not existed. I tried to create my database on AWS RDW in anyways, but the karachkodb had not existed. I thought maybe it was the Frie Tier version. This is did not allow to show the databases(or it was the error in AWS RDS). All my settings in AWS RDS were from the instructions from the AWS site.
 - On my VM with Ubuntu in CLI (to connected with my Amazon RDS karachkodb) i entered 
 -  mysql -h karachkodb.cfmlgo87dbxs.us-east-1.rds.amazonaws.com -P 3306 -u admin -p
  - I created the new database DATABASE1
@@ -202,7 +202,7 @@ karachkodb.cfmlgo87dbxs.us-east-1.rds.amazonaws.com
     - Table name - Music
     - Primary key - Artist
     - Add sort key-Title 
-    - I uncheked **Use default settings.** in the Table setting
+    - I unchecked **Use default settings.** in the Table setting
     - I pushed the button "Create"
 18. I added date into the table Music
     - I chose name Music- Item-create Item (Artist: No One You Know; Title: My Dog Spot
@@ -215,5 +215,5 @@ Artist: The Acme Band; Title: Look Out, World
 - I pushed the button Start search
 - (dynamodb.jpg)![dynamodb.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m3/dynamodb.jpg)
 - I changed Query to Scan.
-- I set up fiter to Artist and value to The Acme Band
+- I set up filter to Artist and value to The Acme Band
 - I pushed the button Start search
