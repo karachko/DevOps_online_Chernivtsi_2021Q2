@@ -83,41 +83,44 @@ COLLATE
 - VALUES ('2', 'Amizon', '3462', 'Petro', 'Petrov');
 6.  I constructed and executed SELECT
 - SELECT * FROM CLIENT WHERE C_NameL = 'Petrov';
+- 
 ![select-were.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m3/select-were.jpg)
-SELECT * FROM PHARMACY
+- SELECT * FROM PHARMACY
 GROUP BY PH_ID;
-(select-groupby.jpg)
-SELECT * FROM PREPARATION WHERE PHARMACY_ID = 1
-ORDER BY PR_Name;
-(select-order-by.jpg)
-7.
--DDL
-Adding a new column Price (table Preparation , database PHARMNETWORK )
-USE PHARMNETWORK
-ALTER TABLE PREPARATION
-ADD PR_PRICE INT NOT NULL;(ddl.jpg)
--DML
-DELETE FROM PREPARATION 
-WHERE PR_Name = 'VitaminZinc';
--DCL
-GRANT
- CREATE USER 'newuser'@'localhost' IDENTIFIED BY 'password';
-  GRANT UPDATE ON PREPARATION TO'newuser'@'localhost;
-sudo mysql -u newuser -p
-https://www.digitalocean.com/community/tutorials/mysql-ru
 
-8.
-1)GRANT ALL PRIVILEGES ON * . * TO 'newuser'@'localhost';
-quit
-sudo mysql -u newuser -p
-use PHARMNETWORK
-SELECT * FROM PREPARATION WHERE PHARMACY_ID = 1 ORDER BY PR_Name;
-(8.1.jpg)
-2) sudo mysql
-REVOKE ALL PRIVILEGES ON * . * FROM 'newuser'@'localhost';
-quit
-sudo mysql -u newuser -p
-(8.2.jpq)
+(select-groupby.jpg)![select-groupby.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m3/select-groupby.jpg)
+- SELECT * FROM PREPARATION WHERE PHARMACY_ID = 1
+ORDER BY PR_Name;
+
+(select-order-by.jpg)![select-groupby.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m3/select-order-by.jpg)
+7.
+- DDL 
+   - I added a new column with Price (table Preparation , database PHARMNETWORK )
+   - USE PHARMNETWORK
+   - ALTER TABLE PREPARATION
+   - ADD PR_PRICE INT NOT NULL;
+   - (ddl.jpg)![ddl.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m3/ddl.jpg)
+- DML(I deleted the preparation VitaminZinc )
+    - DELETE FROM PREPARATION 
+    - WHERE PR_Name = 'VitaminZinc';
+-DCL
+    -  I allowed GRANT UPDATE to user Newuser
+    - CREATE USER 'newuser'@'localhost' IDENTIFIED BY 'password';
+    - GRANT UPDATE ON PREPARATION TO'newuser'@'localhost;
+   
+ 8. I set up **Create GRANT ALL PRIVILEGES** for newuser
+- GRANT ALL PRIVILEGES ON * . * TO 'newuser'@'localhost';
+- quit
+- sudo mysql -u newuser -p
+- use PHARMNETWORK
+- SELECT * FROM PREPARATION WHERE PHARMACY_ID = 1 ORDER BY PR_Name;
+- (8.1.jpg)![8.1.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m3/8.1.jpg)
+2) 
+- sudo mysql
+- REVOKE ALL PRIVILEGES ON * . * FROM 'newuser'@'localhost';
+- quit
+- sudo mysql -u newuser -p
+- (8.2.jpq)[8.2.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m3/8.2.jpg)
 
 PART 2
 10. 
