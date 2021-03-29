@@ -1,6 +1,6 @@
 
-## TASK 3.1 ##
-# PART 1 #
+# TASK 3.1 #
+## PART 1 ##
 1. I installed MySql server on Ubuntu 18.04
 - sudo apt update
 - sudo apt install mysql-server
@@ -131,11 +131,10 @@ ORDER BY PR_Name;
 - 
 ![select-were.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m3/select-were.jpg)
 
-PART 2
-10. 
-
-In the terminal :  sudo mysqldump PHARMNETWORK > /home/karachko/PHARMNETWORK_28032021.sql
-(10.1.jpg)
+## PART 2 ##
+10. I backed up  database PHARMNETWORK
+- In the terminal :  sudo mysqldump PHARMNETWORK > /home/karachko/PHARMNETWORK_28032021.sql
+(10.1.jpg)![10.1.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m3/10.1.jpg)
 11.
 - sudo mysql
 - use PHARMNETWORK
