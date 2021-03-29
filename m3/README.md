@@ -1,5 +1,6 @@
 
 ## TASK 3.1 ##
+# PART 1 #
 1. I installed MySql server on Ubuntu 18.04
 - sudo apt update
 - sudo apt install mysql-server
@@ -121,6 +122,14 @@ ORDER BY PR_Name;
 - quit
 - sudo mysql -u newuser -p
 - (82.jpq)[82.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m3/82.jpg)
+
+9. GRANT ALL PRIVILEGES ON * . * TO 'newuser'@'localhost';
+- quit
+- sudo mysql -u newuser -p
+- use PHARMNETWORK
+- SELECT * FROM CLIENT WHERE C_NameL = 'Petrov';
+- 
+![select-were.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m3/select-were.jpg)
 
 PART 2
 10. 
