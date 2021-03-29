@@ -13,15 +13,21 @@ tcp        0      0 localhost:mysql         0.0.0.0:*               LISTEN      
 ```
 - I lanched to mysql 
     - sudo mysql
-3.I chose the subject area - pharmacy
-- I created table RHARMACY with the list of pharmacies(PRIMARY KEY(PH_ID))
-
+3.I chose the subject area - pharmacies
+- I created table PHARMACY with the list of pharmacies(PH_ID- the unique identifier of PHARMACY,PH_Name-the nameof PHARMACY)
 |PH_ID     |PH_Name    |PRIMARY KEY|
 |----------|-----------|-----------|
 |smallint  |VARCHAR(30)|PH_ID      |
+- I created table PREPARATION with the list of preparations in pharmacy(PR_ID- the unique identifier of preparation,PR_Name-the nameof preparation,PHARMACY_ID- the unique identifier of PHARMACY)
+|PR_ID     |PR_Name    |PHARMACY_ID|PRIMARY KEY|FOREIGN KEY|
+|----------|-----------|-----------|-----------|-----------|
+|smallint  |VARCHAR(30)|smallint   |PR_ID      |PHARMACY_ID|
+- I created table CLIENT with the list of clients in pharmacy(C_ID- the unique identifier of client,PR_ID- the unique identifier of preparation,PR_Name-the nameof preparation,PHARMACY_ID- the unique identifier of PHARMACY,C_NameF the first name of client,C_NameL the last name of client)
+|C_ID      |PR_ID      | PR_Name   | C_NameF   |C_NameL    |PHARMACY_ID|PRIMARY KEY|FOREIGN KEY|
+|----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
+|smallint  |smallint   |VARCHAR(30)|VARCHAR(30)|VARCHAR(30)|smallint   |C_ID        |PR_ID     |
 
-
-5. 
+4. I created tables
 - CREATE DATABASE PHARMNETWORK CHARACTER SET utf8 COLLATE utf8_general_ci;
 CHARACTER SET
 Определение кодировки таблиц базы данных.
@@ -29,8 +35,7 @@ COLLATE
 Определение порядка сортировки данных.
 - USE PHARMNETWORK
 - CREATE TABLE PHARMACY(PH_ID smallint,  PH_Name VARCHAR(30) NOT NULL, PRIMARY KEY(PH_ID));
-- 
- CREATE TABLE PREPARATION (
+-  CREATE TABLE PREPARATION (
     PR_ID smallint,
     PHARMACY_ID smallint,
     PR_Name VARCHAR(30) NOT NULL,
@@ -45,37 +50,36 @@ COLLATE
     PRIMARY KEY (C_ID),
     FOREIGN KEY (PR_ID) REFERENCES PREPARATION(PR_ID)
     ); 
-5.
-I filled in tables 
-INSERT PHARMACY(PH_ID, PH_Name) 
-VALUES ('1', 'Stay_helphy');
-INSERT PHARMACY(PH_ID, PH_Name) 
-VALUES ('2', 'Bless_yourself');
+5. I filled in tables 
+- INSERT PHARMACY(PH_ID, PH_Name) 
+- VALUES ('1', 'Stay_helphy');
+- INSERT PHARMACY(PH_ID, PH_Name) 
+- VALUES ('2', 'Bless_yourself');
 
-INSERT PREPARATION(PHARMACY_ID, PR_ID, PR_Name) 
-VALUES ('1','101', 'Amizon');
-INSERT PREPARATION(PHARMACY_ID, PR_ID, PR_Name)  
-VALUES ('1','102', 'VitaminD');
-INSERT PREPARATION(PHARMACY_ID, PR_ID, PR_Name)  
-VALUES ('1','103', 'VitaminZinc');
-INSERT PREPARATION(PHARMACY_ID, PR_ID, PR_Name)  
-VALUES ('1','104', 'VitaminC');
+- INSERT PREPARATION(PHARMACY_ID, PR_ID, PR_Name) 
+- VALUES ('1','101', 'Amizon');
+- INSERT PREPARATION(PHARMACY_ID, PR_ID, PR_Name)  
+- VALUES ('1','102', 'VitaminD');
+- INSERT PREPARATION(PHARMACY_ID, PR_ID, PR_Name)  
+- VALUES ('1','103', 'VitaminZinc');
+- INSERT PREPARATION(PHARMACY_ID, PR_ID, PR_Name)  
+- VALUES ('1','104', 'VitaminC');
 
-INSERT PREPARATION(PHARMACY_ID, PR_ID, PR_Name) 
-VALUES ('2','201', 'Amizon');
-INSERT PREPARATION(PHARMACY_ID, PR_ID, PR_Name)  
-VALUES ('2','202', 'VitaminD');
-INSERT PREPARATION(PHARMACY_ID, PR_ID, PR_Name)  
-VALUES ('2','204', 'VitaminC');
+- INSERT PREPARATION(PHARMACY_ID, PR_ID, PR_Name) 
+- VALUES ('2','201', 'Amizon');
+- INSERT PREPARATION(PHARMACY_ID, PR_ID, PR_Name)  
+- VALUES ('2','202', 'VitaminD');
+- INSERT PREPARATION(PHARMACY_ID, PR_ID, PR_Name)  
+- VALUES ('2','204', 'VitaminC');
 
-INSERT CLIENT(PHARMACY_ID, PR_Name, C_ID, C_NameF, C_NameL) 
-VALUES ('1', 'Amizon', '345', 'Ivan', 'Ivanov');
-INSERT CLIENT(PHARMACY_ID, PR_Name, C_ID, C_NameF, C_NameL) 
-VALUES ('2', 'Amizon', '2345', 'Ivan', 'Ivanov');
-INSERT CLIENT(PHARMACY_ID, PR_Name, C_ID, C_NameF, C_NameL) 
-VALUES ('1', 'Amizon', '346', 'Petro', 'Petrov');
-INSERT CLIENT(PHARMACY_ID, PR_Name, C_ID, C_NameF, C_NameL) 
-VALUES ('2', 'Amizon', '3462', 'Petro', 'Petrov');
+- INSERT CLIENT(PHARMACY_ID, PR_Name, C_ID, C_NameF, C_NameL) 
+- VALUES ('1', 'Amizon', '345', 'Ivan', 'Ivanov');
+- INSERT CLIENT(PHARMACY_ID, PR_Name, C_ID, C_NameF, C_NameL) 
+- VALUES ('2', 'Amizon', '2345', 'Ivan', 'Ivanov');
+- INSERT CLIENT(PHARMACY_ID, PR_Name, C_ID, C_NameF, C_NameL) 
+- VALUES ('1', 'Amizon', '346', 'Petro', 'Petrov');
+- INSERT CLIENT(PHARMACY_ID, PR_Name, C_ID, C_NameF, C_NameL) 
+- VALUES ('2', 'Amizon', '3462', 'Petro', 'Petrov');
 6.  SELECT * FROM CLIENT WHERE C_NameL = 'Petrov';
 (select-were.jpg)
 SELECT * FROM PHARMACY
