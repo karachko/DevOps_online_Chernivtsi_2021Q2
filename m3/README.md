@@ -132,31 +132,29 @@ ORDER BY PR_Name;
 ![select-were.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m3/select-were.jpg)
 
 ## PART 2 ##
-10. I backed up  database PHARMNETWORK
+10. I backed up the database PHARMNETWORK
 - In the terminal :  sudo mysqldump PHARMNETWORK > /home/karachko/PHARMNETWORK_28032021.sql
 (10.1.jpg)![10.1.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m3/10.1.jpg)
-11.
+11. I deleted the table CLIENT
 - sudo mysql
 - use PHARMNETWORK
 - DROP TABLE CLIENT;
-- ```The message "Query OK, 0 rows affected (46.07 sec)"``` had been displayed
+- The message``` "Query OK, 0 rows affected (46.07 sec)"``` had been displayed
 - I did the select quary from the table CLIENT ````mysql> SELECT * FROM CLIENT WHERE C_NameL = 'Petrov';
 ERROR 1146 (42S02): Table 'PHARMNETWORK.CLIENT' doesn't exist```
 mysql>
 12.
-
 - I restored  DATABASE PHARMNETWORK
-
-sudo mysql
-DROP DATABASE PHARMNETWORK
-CREATE DATABASE PHARMNETWORK 
-In the terminal :sudo mysql PHARMNETWORK < /home/karachko/PHARMNETWORK_28032021.sql
-sudo mysql
-use PHARMNETWORK
+- sudo mysql
+- DROP DATABASE PHARMNETWORK
+- CREATE DATABASE PHARMNETWORK 
+- In the terminal :sudo mysql PHARMNETWORK < /home/karachko/PHARMNETWORK_28032021.sql
+- sudo mysql
+- use PHARMNETWORK
 show tables;
-(12.jpg)
+(12.jpg)![12.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m3/12.jpg)
 SELECT * FROM CLIENT WHERE C_NameL = 'Petrov';
-(12.1.jpg)
+(12.1.jpg)![12.1.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m3/12.1.jpg)
 13.
 Amazon RDS-Dashboard-Create database
 - Engine options-My SQL
