@@ -114,13 +114,13 @@ ORDER BY PR_Name;
 - sudo mysql -u newuser -p
 - use PHARMNETWORK
 - SELECT * FROM PREPARATION WHERE PHARMACY_ID = 1 ORDER BY PR_Name;
-- (81.jpg)![8.1.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m3/81.jpg)
+- (81.jpg)![81.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m3/81.jpg)
 2) 
 - sudo mysql
 - REVOKE ALL PRIVILEGES ON * . * FROM 'newuser'@'localhost';
 - quit
 - sudo mysql -u newuser -p
-- (82.jpq)[8.2.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m3/82.jpg)
+- (82.jpq)[82.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m3/82.jpg)
 
 PART 2
 10. 
