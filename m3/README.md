@@ -19,7 +19,10 @@ tcp        0      0 localhost:mysql         0.0.0.0:*               LISTEN      
 | :---------------: | :---------------: |
 | unique identifier | RHARMACY          |
 
-
+|This is   |a simple   |table header|
+|----------|-----------|------------|
+|table     |data       |here        |
+|it doesn't|actually   |have to line up nicely!|
 5. 
 - CREATE DATABASE PHARMNETWORK CHARACTER SET utf8 COLLATE utf8_general_ci;
 CHARACTER SET
