@@ -1,19 +1,25 @@
 
 (1.jpg)![1.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m1/task2.2/1.jpg)
+## TASK 3.1 ##
 1. I installed MySql server on Ubuntu 18.04
-sudo apt update
-sudo apt install mysql-server
-I cheched that mysql had been started 
-sudo netstat -tap | grep mysql
+- sudo apt update
+- sudo apt install mysql-server
+- I cheched that mysql had been started 
+- sudo netstat -tap | grep mysql
 ```
 tcp        0      0 localhost:33060         0.0.0.0:*               LISTEN      3143/mysqld
 tcp        0      0 localhost:mysql         0.0.0.0:*               LISTEN      3143/mysqld
 
 ```
-I entered to mysql 
-sudo mysql
-3.
-4. 
+- I lanched to mysql 
+    - sudo mysql
+3.I chose the subject area - pharmacy
+- I created table RHARMACY with the list of pharmacies
+|PH_ID    | PH_Name |
+|unique identifier|RHARMACY |
+
+
+5. 
 - CREATE DATABASE PHARMNETWORK CHARACTER SET utf8 COLLATE utf8_general_ci;
 CHARACTER SET
 Определение кодировки таблиц базы данных.
