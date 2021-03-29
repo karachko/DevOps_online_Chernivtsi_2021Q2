@@ -180,20 +180,23 @@ karachkodb.cfmlgo87dbxs.us-east-1.rds.amazonaws.com
 
 
 
--The karachkodb had not existed. I tried to create my database on AWS RDW in any ways, but the karachkodb had not existed. I thought maybe it was the Frie Tier version. IT did not allow to show the databases(or it was the error in AWS RDS). All my settings in AWS RDS were from the instractions from the AWS site.
-- On my VM with Ubuntu in CLI (to connected with my Amazon RDS karachkodb)i entered 
- mysql -h karachkodb.cfmlgo87dbxs.us-east-1.rds.amazonaws.com -P 3306 -u admin -p
- - I created new database
-CREATE DATABASE DATABASE1
+- The karachkodb had not existed. I tried to create my database on AWS RDW in any ways, but the karachkodb had not existed. I thought maybe it was the Frie Tier version. This is did not allow to show the databases(or it was the error in AWS RDS). All my settings in AWS RDS were from the instractions from the AWS site.
+- On my VM with Ubuntu in CLI (to connected with my Amazon RDS karachkodb) i entered 
+-  mysql -h karachkodb.cfmlgo87dbxs.us-east-1.rds.amazonaws.com -P 3306 -u admin -p
+ - I created the new database DATABASE1
+- CREATE DATABASE DATABASE1
  - I uploaded PHARMNETWORK_28032021.sql to DATABASE1
 mysql -u admin -p -h karachkodb.cfmlgo87dbxs.us-east-1.rds.amazonaws.com -D DATABASE1 < /home/karachko/PHARMNETWORK_28032021.sql 
--
-15.
- SELECT * FROM PHARMACY
-(db1.jpg-select1db1.jpg)
-16.
-mysqldump --databases database1 -h database-1.cfmlgo87dbxs.us-east-1.rds.amazonaws.com -u karachko -P 3306 -p > rds.sql
-mysqldump -P 3306 -h database-1.cfmlgo87dbxs.us-east-1.rds.amazonaws.com -u dbuser — password=karachko database1 | pv -W > dumpfile
+
+15. I executed SELECT operator
+- mysql -h karachkodb.cfmlgo87dbxs.us-east-1.rds.amazonaws.com -P 3306 -u admin -p
+- SELECT * FROM PHARMACY
+- ![selectfromfarmacy.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m3/selectfromfarmacy.jpg)
+16. I created the dump
+mysqldump --databases DATABASE1 -h karachkodb.cfmlgo87dbxs.us-east-1.rds.amazonaws.com -u admin -P 3306 -p > rds.sql
+- ![mysqldump.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m3/mysqldump.jpg)
+- The dump of Database1 had been created
+- ![rdssql.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m3/rdssql.jpg)
 ## PART 3 ##
 17. I created an Amazon DynamoDB table(Amazon DynamoDB-create table)
     - Table name - Music
