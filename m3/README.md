@@ -1,5 +1,4 @@
 
-(1.jpg)![1.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m1/task2.2/1.jpg)
 ## TASK 3.1 ##
 1. I installed MySql server on Ubuntu 18.04
 - sudo apt update
@@ -18,10 +17,12 @@ tcp        0      0 localhost:mysql         0.0.0.0:*               LISTEN      
 |PH_ID     |PH_Name    |PRIMARY KEY|
 |----------|-----------|-----------|
 |smallint  |VARCHAR(30)|PH_ID      |
+
 - I created table PREPARATION with the list of preparations in pharmacy(PR_ID- the unique identifier of preparation,PR_Name-the nameof preparation,PHARMACY_ID- the unique identifier of PHARMACY)
 |PR_ID     |PR_Name    |PHARMACY_ID|PRIMARY KEY|FOREIGN KEY|
 |----------|-----------|-----------|-----------|-----------|
 |smallint  |VARCHAR(30)|smallint   |PR_ID      |PHARMACY_ID|
+
 - I created table CLIENT with the list of clients in pharmacy(C_ID- the unique identifier of client,PR_ID- the unique identifier of preparation,PR_Name-the nameof preparation,PHARMACY_ID- the unique identifier of PHARMACY,C_NameF the first name of client,C_NameL the last name of client)
 |C_ID      |PR_ID      | PR_Name   | C_NameF   |C_NameL    |PHARMACY_ID|PRIMARY KEY|FOREIGN KEY|
 |----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
@@ -80,8 +81,9 @@ COLLATE
 - VALUES ('1', 'Amizon', '346', 'Petro', 'Petrov');
 - INSERT CLIENT(PHARMACY_ID, PR_Name, C_ID, C_NameF, C_NameL) 
 - VALUES ('2', 'Amizon', '3462', 'Petro', 'Petrov');
-6.  SELECT * FROM CLIENT WHERE C_NameL = 'Petrov';
-(select-were.jpg)
+6.  I constructed and executed SELECT
+- SELECT * FROM CLIENT WHERE C_NameL = 'Petrov';
+![select-were.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m3/select-were.jpg)
 SELECT * FROM PHARMACY
 GROUP BY PH_ID;
 (select-groupby.jpg)
