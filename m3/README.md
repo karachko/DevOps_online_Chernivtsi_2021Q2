@@ -4,7 +4,7 @@
 1. I installed MySql server on Ubuntu 18.04
 - sudo apt update
 - sudo apt install mysql-server
-- I cheched that mysql had been started 
+- I chekhed that mysql had been started 
 - sudo netstat -tap | grep mysql
 ```
 tcp        0      0 localhost:33060         0.0.0.0:*               LISTEN      3143/mysqld
