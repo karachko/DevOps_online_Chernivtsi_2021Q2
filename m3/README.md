@@ -165,6 +165,8 @@ password df4tn2gw
 - Connectivity
     - Public access-Yes
     - VPC security group-  (create vpc-mysql,  vpc -default vpc-966ad6eb,VPC security groups-vpc-mysql( inbound roule type- my sql,protocol-3306, ip -my IP 109.229.12.151/32)-Save rules)
+    - Endpoint
+database-1.cfmlgo87dbxs.us-east-1.rds.amazonaws.com
 3) Availability zone -us-east-1a
 
  mysql -h database-1.cfmlgo87dbxs.us-east-1.rds.amazonaws.com -P 3306 -u admin -p
@@ -181,3 +183,8 @@ mysql -u admin -p -h database-1.cfmlgo87dbxs.us-east-1.rds.amazonaws.com -D DB1 
 
 mysqldump --databases database1 -h database-1.cfmlgo87dbxs.us-east-1.rds.amazonaws.com -u karachko -P 3306 -p > rds.sql
 mysqldump -P 3306 -h database-1.cfmlgo87dbxs.us-east-1.rds.amazonaws.com -u dbuser — password=karachko database1 | pv -W > dumpfile
+## PART 3 ##
+- I created an Amazon DynamoDB table(Amazon DynamoDB-create table)
+    - Table name - PHARMACY
+    - Primary key - PH_ID
+
