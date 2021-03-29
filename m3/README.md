@@ -15,7 +15,7 @@ tcp        0      0 localhost:mysql         0.0.0.0:*               LISTEN      
     - sudo mysql
 3.I chose the subject area - pharmacy
 - I created table RHARMACY with the list of pharmacies
-| PH_ID             | PH_Name           |
+- | PH_ID             | PH_Name           |
 | :---------------: | :---------------: |
 | unique identifier | RHARMACY          |
 
