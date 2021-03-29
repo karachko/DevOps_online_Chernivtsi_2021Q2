@@ -132,7 +132,7 @@ ORDER BY PR_Name;
 ![select-were.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m3/select-were.jpg)
 
 ## PART 2 ##
-10. I backed up the database PHARMNETWORK
+10. I backed-up the database PHARMNETWORK
 - In the terminal :  sudo mysqldump PHARMNETWORK > /home/karachko/PHARMNETWORK_28032021.sql
 (10.1.jpg)![10.1.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m3/10.1.jpg)
 11. I deleted the table CLIENT
@@ -155,17 +155,16 @@ show tables;
 (12.jpg)![12.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m3/12.jpg)
 SELECT * FROM CLIENT WHERE C_NameL = 'Petrov';
 (12.1.jpg)![12.1.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m3/12.1.jpg)
-13.
-Amazon RDS-Dashboard-Create database
+13. I Transfered my local database to RDS AWS
+- I opened Amazon RDS-Dashboard-Create database
 - Engine options-My SQL
 - Templates-Free tier
-- Setting-DB instance identifier database-1
+- DB instance identifier database-1
 master username admin
 password df4tn2gw
 - Connectivity
-1)Public access-Yes
-2)VPC security group-  (create vpc-mysql,  vpc -default vpc-966ad6eb,VPC security groups-vpc-mysql( inbound roule type- my sql,protocol-3306, ip -my IP 109.229.12.151/32
-Save rules)
+    - Public access-Yes
+    - VPC security group-  (create vpc-mysql,  vpc -default vpc-966ad6eb,VPC security groups-vpc-mysql( inbound roule type- my sql,protocol-3306, ip -my IP 109.229.12.151/32)-Save rules)
 3) Availability zone -us-east-1a
 
  mysql -h database-1.cfmlgo87dbxs.us-east-1.rds.amazonaws.com -P 3306 -u admin -p
