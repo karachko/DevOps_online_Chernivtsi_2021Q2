@@ -188,15 +188,18 @@ mysqldump -P 3306 -h database-1.cfmlgo87dbxs.us-east-1.rds.amazonaws.com -u dbus
     - Table name - Music
     - Primary key - Artist
     - Add sort key-Title 
-    - I uncheked Use default settings.in the Table setting
+    - I uncheked **Use default settings.** in the Table setting
     - I pushed the button "Create"
 18. I added date into the table Music
-    - table name Music- Item-create Item (Artist: No One You Know; Title: My Dog Spot
+    - I chose name Music- Item-create Item (Artist: No One You Know; Title: My Dog Spot
 Artist: No One You Know; Title: Somewhere Down The Road
 Artist: The Acme Band; Title: Still in Love
 Artist: The Acme Band; Title: Look Out, World
 )
 19. I did Query an Amazon DynamoDB table using Query and Scan.
-- I chose table name Music- Items - changed Scan to Query. I chose Partition key No One You Know
+- I chose table name Music- Items - I changed Scan to Query. I chose Partition key No One You Know
 - I pushed the button Start search
 - (dynamodb.jpg)![dynamodb.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m3/dynamodb.jpg)
+- I changed Query to Scan.
+- I set up fiter to Artist and value to The Acme Band
+- I pushed the button Start search
