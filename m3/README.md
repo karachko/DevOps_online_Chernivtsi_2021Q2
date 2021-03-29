@@ -14,14 +14,12 @@ tcp        0      0 localhost:mysql         0.0.0.0:*               LISTEN      
 - I lanched to mysql 
     - sudo mysql
 3.I chose the subject area - pharmacy
-- I created table RHARMACY with the list of pharmacies
-- | PH_ID             | PH_Name           |
-| :---------------: | :---------------: |
-| unique identifier | RHARMACY          |
+- I created table RHARMACY with the list of pharmacies(PRIMARY KEY(PH_ID))
 
-|PH_ID     |PH_Name    |
-|----------|-----------|
-|smallint  |VARCHAR(30)|    
+|PH_ID     |PH_Name    |PRIMARY KEY|
+|----------|-----------|-----------|
+|smallint  |VARCHAR(30)|PH_ID      |
+
 
 5. 
 - CREATE DATABASE PHARMNETWORK CHARACTER SET utf8 COLLATE utf8_general_ci;
