@@ -15,16 +15,19 @@ tcp        0      0 localhost:mysql         0.0.0.0:*               LISTEN      
     - sudo mysql
 3.I chose the subject area - pharmacies
 - I created table PHARMACY with the list of pharmacies(PH_ID- the unique identifier of PHARMACY,PH_Name-the nameof PHARMACY)
+
 |PH_ID     |PH_Name    |PRIMARY KEY|
 |----------|-----------|-----------|
 |smallint  |VARCHAR(30)|PH_ID      |
 
 - I created table PREPARATION with the list of preparations in pharmacy(PR_ID- the unique identifier of preparation,PR_Name-the nameof preparation,PHARMACY_ID- the unique identifier of PHARMACY)
+- 
 |PR_ID     |PR_Name    |PHARMACY_ID|PRIMARY KEY|FOREIGN KEY|
 |----------|-----------|-----------|-----------|-----------|
 |smallint  |VARCHAR(30)|smallint   |PR_ID      |PHARMACY_ID|
 
 - I created table CLIENT with the list of clients in pharmacy(C_ID- the unique identifier of client,PR_ID- the unique identifier of preparation,PR_Name-the nameof preparation,PHARMACY_ID- the unique identifier of PHARMACY,C_NameF the first name of client,C_NameL the last name of client)
+- 
 |C_ID      |PR_ID      | PR_Name   | C_NameF   |C_NameL    |PHARMACY_ID|PRIMARY KEY|FOREIGN KEY|
 |----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
 |smallint  |smallint   |VARCHAR(30)|VARCHAR(30)|VARCHAR(30)|smallint   |C_ID        |PR_ID     |
