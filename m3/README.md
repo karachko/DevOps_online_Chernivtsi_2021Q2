@@ -187,7 +187,7 @@ mysql -u admin -p -h database-1.cfmlgo87dbxs.us-east-1.rds.amazonaws.com -D DB1 
 mysqldump --databases database1 -h database-1.cfmlgo87dbxs.us-east-1.rds.amazonaws.com -u karachko -P 3306 -p > rds.sql
 mysqldump -P 3306 -h database-1.cfmlgo87dbxs.us-east-1.rds.amazonaws.com -u dbuser — password=karachko database1 | pv -W > dumpfile
 ## PART 3 ##
-- I created an Amazon DynamoDB table(Amazon DynamoDB-create table)
+17. I created an Amazon DynamoDB table(Amazon DynamoDB-create table)
     - Table name - Music
     - Primary key - Artist
     - Add sort key-Title 
