@@ -119,12 +119,12 @@ ORDER BY PR_Name;
 - use PHARMNETWORK
 - SELECT * FROM PREPARATION WHERE PHARMACY_ID = 1 ORDER BY PR_Name;
 - (81.jpg)![81.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m3/81.jpg)
-2) 
+ 
 - sudo mysql
 - REVOKE ALL PRIVILEGES ON * . * FROM 'newuser'@'localhost';
 - quit
 - sudo mysql -u newuser -p
-- (82.jpq)[82.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m3/82.jpg)
+- (82.jpq)![82.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m3/82.jpg)
 
 9. GRANT ALL PRIVILEGES ON * . * TO 'newuser'@'localhost';
 - quit
@@ -160,30 +160,38 @@ SELECT * FROM CLIENT WHERE C_NameL = 'Petrov';
 (12.1.jpg)![12.1.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m3/12.1.jpg)
 13. I Transfered my local database to RDS AWS
 - I opened Amazon RDS-Dashboard-Create database
-- Engine options-My SQL
-- Templates-Free tier
-- DB instance identifier database-1
-master username admin
-password df4tn2gw
-- Connectivity
+- I selected-Engine options-My SQL
+- I chose Templates-Free tier
+- I chose DB instance identifier karachkodb
+    - master username -admin
+    - password - df4tn2gw
+- I chose Connectivity
     - Public access-Yes
     - VPC security group-  (create vpc-mysql,  vpc -default vpc-966ad6eb,VPC security groups-vpc-mysql( inbound roule type- my sql,protocol-3306, ip -my IP 109.229.12.151/32)-Save rules)
-    - Endpoint
-database-1.cfmlgo87dbxs.us-east-1.rds.amazonaws.com
-3) Availability zone -us-east-1a
-
- mysql -h database-1.cfmlgo87dbxs.us-east-1.rds.amazonaws.com -P 3306 -u admin -p
-Перевірила зв'язок з базою
-CREATE DATABASE DB1
-SHOW databases;
-
-Завантажила в базу DB1 базу PHARMNETWORK
-mysql -u admin -p -h database-1.cfmlgo87dbxs.us-east-1.rds.amazonaws.com -D DB1 < /home/karachko/PHARMNETWORK_28032021.sql 
+   
+   
+- MY Endpoint
+karachkodb.cfmlgo87dbxs.us-east-1.rds.amazonaws.com
+14.
+- On my VM with Ubuntu in CLI (to connected with my Amazon RDS karachkodb)i entered 
+ mysql -h karachkodb.cfmlgo87dbxs.us-east-1.rds.amazonaws.com -P 3306 -u admin -p
+- I saccesefuly lanched in mysql  
+- I checked (Did the base karachkodb exist?).SHOW databases; ![show-database.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m3/show-database.jpg)
 
 
+
+-The karachkodb had not existed. I tried to create my database on AWS RDW in any ways, but the karachkodb had not existed. I thought maybe it was the Frie Tier version. IT did not allow to show the databases(or it was the error in AWS RDS). All my settings in AWS RDS were from the instractions from the AWS site.
+- On my VM with Ubuntu in CLI (to connected with my Amazon RDS karachkodb)i entered 
+ mysql -h karachkodb.cfmlgo87dbxs.us-east-1.rds.amazonaws.com -P 3306 -u admin -p
+ - I created new database
+CREATE DATABASE DATABASE1
+ - I uploaded PHARMNETWORK_28032021.sql to DATABASE1
+mysql -u admin -p -h karachkodb.cfmlgo87dbxs.us-east-1.rds.amazonaws.com -D DATABASE1 < /home/karachko/PHARMNETWORK_28032021.sql 
+-
+15.
  SELECT * FROM PHARMACY
 (db1.jpg-select1db1.jpg)
-
+16.
 mysqldump --databases database1 -h database-1.cfmlgo87dbxs.us-east-1.rds.amazonaws.com -u karachko -P 3306 -p > rds.sql
 mysqldump -P 3306 -h database-1.cfmlgo87dbxs.us-east-1.rds.amazonaws.com -u dbuser — password=karachko database1 | pv -W > dumpfile
 ## PART 3 ##
