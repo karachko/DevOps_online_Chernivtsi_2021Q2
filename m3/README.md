@@ -199,4 +199,4 @@ Artist: The Acme Band; Title: Look Out, World
 19. I did Query an Amazon DynamoDB table using Query and Scan.
 - I chose table name Music- Items - changed Scan to Query. I chose Partition key No One You Know
 - I pushed the button Start search
--
+- (dynamodb.jpg)![dynamodb.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m3/dynamodb.jpg)
