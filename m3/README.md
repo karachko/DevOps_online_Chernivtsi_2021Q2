@@ -170,6 +170,7 @@ SELECT * FROM CLIENT WHERE C_NameL = 'Petrov';
     - Public access-Yes
     - VPC- vpc -default vpc-966ad6eb
     - VPC security groups my-vpc-mysql(create vpc-mysql,  vpc -default vpc-966ad6eb,( inbound roule type- my sql,protocol-3306, ip -my IP 109.229.12.151/32))
+ 
 -I chose Additional configuration Initial database name-DATABASE1
 - I chose Subnet group- default vpc-966ad6eb
 - Save rules
