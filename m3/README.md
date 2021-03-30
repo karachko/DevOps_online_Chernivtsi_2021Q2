@@ -169,13 +169,14 @@ SELECT * FROM CLIENT WHERE C_NameL = 'Petrov';
 - I chose Connectivity
     - Public access-Yes
     - VPC- vpc -default vpc-966ad6eb
-    - VPC security groups my-vpc-mysql(create vpc-mysql,  vpc -default vpc-966ad6eb,( inbound roule type- my sql,protocol-3306, ip -my IP 109.229.12.151/32)
-    - -Save rules
+    - VPC security groups my-vpc-mysql(create vpc-mysql,  vpc -default vpc-966ad6eb,( inbound roule type- my sql,protocol-3306, ip -my IP 109.229.12.151/32))
 -I chose Additional configuration Initial database name-DATABASE1
 - I chose Subnet group- default vpc-966ad6eb
+- Save rules
 
 - MY Endpoint
 karachkodb.cfmlgo87dbxs.us-east-1.rds.amazonaws.com
+
 14.
 - On my VM with Ubuntu in CLI (to connected with my Amazon RDS karachkodb)i entered 
  mysql -h karachkodb.cfmlgo87dbxs.us-east-1.rds.amazonaws.com -P 3306 -u admin -p
