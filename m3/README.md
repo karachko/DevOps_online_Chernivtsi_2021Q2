@@ -158,38 +158,34 @@ show tables;
 (12.jpg)![12.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m3/12.jpg)
 SELECT * FROM CLIENT WHERE C_NameL = 'Petrov';
 (12.1.jpg)![12.1.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m3/12.1.jpg)
+
 13. I Transfered my local database to RDS AWS
 - I opened Amazon RDS-Dashboard-Create database
 - I selected-Engine options-My SQL
 - I chose Templates-Free tier
-- I chose DB instance identifier karachkodb
+- I chose Setting-DB instance identifier - karachkodb
     - master username -admin
-    - password - df4tn2gw
+    - password - password
 - I chose Connectivity
     - Public access-Yes
-    - VPC security group-  (create vpc-mysql,  vpc -default vpc-966ad6eb,VPC security groups-vpc-mysql( inbound roule type- my sql,protocol-3306, ip -my IP 109.229.12.151/32)-Save rules)
-   
-   
+    - VPC- vpc -default vpc-966ad6eb
+    - VPC security groups my-vpc-mysql(create vpc-mysql,  vpc -default vpc-966ad6eb,( inbound roule type- my sql,protocol-3306, ip -my IP 109.229.12.151/32)
+    - -Save rules
+-I chose Additional configuration Initial database name-DATABASE1
+- I chose Subnet group- default vpc-966ad6eb
+
 - MY Endpoint
 karachkodb.cfmlgo87dbxs.us-east-1.rds.amazonaws.com
 14.
 - On my VM with Ubuntu in CLI (to connected with my Amazon RDS karachkodb)i entered 
  mysql -h karachkodb.cfmlgo87dbxs.us-east-1.rds.amazonaws.com -P 3306 -u admin -p
 - I successfully lanched in mysql  
-- I checked (Did the base karachkodb exist?).SHOW databases; ![show-database.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m3/show-database.jpg)
-
-
-
-- The karachkodb had not existed. I tried to create my database on AWS RDW in anyways, but the karachkodb had not existed. I thought maybe it was the Frie Tier version. This is did not allow to show the databases(or it was the error in AWS RDS). All my settings in AWS RDS were from the instructions from the AWS site.
-- On my VM with Ubuntu in CLI (to connected with my Amazon RDS karachkodb) i entered 
--  mysql -h karachkodb.cfmlgo87dbxs.us-east-1.rds.amazonaws.com -P 3306 -u admin -p
- - I created the new database DATABASE1
-- CREATE DATABASE DATABASE1
- - I uploaded PHARMNETWORK_28032021.sql to DATABASE1
+- I uploaded PHARMNETWORK_28032021.sql to DATABASE1
 - mysql -u admin -p -h karachkodb.cfmlgo87dbxs.us-east-1.rds.amazonaws.com -D DATABASE1 < /home/karachko/PHARMNETWORK_28032021.sql 
 
 15. I executed SELECT operator
 - mysql -h karachkodb.cfmlgo87dbxs.us-east-1.rds.amazonaws.com -P 3306 -u admin -p
+- USE DATABASE1
 - SELECT * FROM PHARMACY
 - ![selectfromfarmacy.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m3/selectfromfarmacy.jpg)
 16. I created the dump
