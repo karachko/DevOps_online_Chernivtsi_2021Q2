@@ -41,7 +41,7 @@
 12. I created the new project with PC0-PC3, and 1 Switch. (all PC's were connected with Switch via (Copper Straight-through)).
 13. I compared the topology(HUB-PC0-PC3) and (Switch-PC0-PC3). The switch sends an information packet to the same computer for which it is intended.When one of the computers connected to the hub sends information, it is sent to all computers on the network, and then each of them understands whether the information packet was sent to him or not. Accordingly, the addressee receives and processes this packet, and all others are simply ignored. This structure of work has many disadvantages. Not only can one computer “clog” the bandwidth of all devices connected to the hub, but also intercepting other people's packets in such conditions is not difficult.
 14. I created the new project with PC0-PC7, and 2 Switches. (all PC's were connected with Switch via (Copper Straight-through)).Switche0 was connected wih Switche1 via (Copper Cross-over).
-15. I added neccecery ports on the Switch
+15. I added necessary ports on the Switch
 - ![15.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m4/task4.1/15.jpg)
 16.  Everyone PC's were assigned the IP-adress
 - PC0 192.168.0.1
@@ -55,15 +55,15 @@
 - the mask was : 255.255.255.0.
 17. I checked the work of the network 
 - ![17.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m4/task4.1/17.jpg)
-18. I devided this network on two networks and conected its via Router-PT with several ports
-The hubs and switch were conected via **Fiber**
+18. I divided this network on two networks and connected its via Router-PT with several ports
+The hubs and switch were connected via **Fiber**
 19. Everyone (РС4 – РС7) was assigned the IP-adress
 - PC4 192.168.1.1
 - PC5 192.168.1.2
 - PC6 192.168.1.3
 - PC7 192.168.1.4
 - the mask was : 255.255.255.0.
-20. Ports of switch were switched on  (On) and  assigned the IP-adress( one 192.168.0.5, and another 192.168.1.5)
+20. Ports of the switch were switched on  (On) and  assigned the IP-adress( one 192.168.0.5, and another 192.168.1.5)
 - ![20.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m4/task4.1/20.jpg)
 21. Everyone PC's ,from the first network (192.168.0.),was assigned  the **default gateway** 192.168.0.5 
 - Everyone PC ,from the second network (192.168.1.),was assigned  the **default gateway** 192.168.1.5 
