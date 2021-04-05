@@ -1,6 +1,6 @@
 # TASK 4.1 #
 
-1. I created the new project with 4 PS and 1 HUB(all PS was connected with HUB via (Copper Straight-through)).
+1. I created the new project with 4 PS and 1 HUB(all PS were connected with HUB via (Copper Straight-through)).
 2. 
  - ![1.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m4/task4.1/1.jpg)
 3. Everyone PC was assigned the IP-adress 
@@ -37,3 +37,21 @@
 - the mask was : 255.255.255.0.
 11. I checked work of network 
 - ![11.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m4/task4.1/11.jpg)
+12. I created the new project with PC0-PC3, and 1 Switch. (all PS were connected with Switch via (Copper Straight-through))
+13. I compared the topology(HUB-PC0-PC3) and (Switch-PC0-PC3).The switch sends an information packet to the same computer for which it is intended.When one of the computers connected to the hub sends information, it is sent to all computers on the network, and then each of them understands whether the information packet was sent to him or not. Accordingly, the addressee receives and processes this packet, and all others are simply ignored. This structure of work has many disadvantages. Not only can one computer “clog” the bandwidth of all devices connected to the hub, but also intercepting other people's packets in such conditions is not difficult.
+14. I created the new project with PC0-PC7, and 2 Switches. (all PS were connected with Switch via (Copper Straight-through)).Switche0 was connected wih Switche1 via (Copper Cross-over).
+15. I added neccecery ports on the Switch
+- ![15.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m4/task4.1/15.jpg)
+16.  Everyone PC and Server was assigned the IP-adress
+- PC0 192.168.0.1
+- PC1 192.168.0.2
+- PC2 192.168.0.3
+- PC3 192.168.0.4
+- PC4 192.168.0.5
+- PC5 192.168.0.6
+- PC6 192.168.0.7
+- the mask was : 255.255.255.0.
+17. I checked work of network 
+- ![17.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m4/task4.1/17.jpg)
+
+
