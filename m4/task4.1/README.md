@@ -26,6 +26,7 @@
 8. I was deleted the IP adress from everyone PC. The transfer of the packages was failed.
 - ![8.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m4/task4.1/8.jpg)
 9. I created the new project with PC0-PC5, Server,2 Hubs. HUB0 was connected wih HUB1 via (Copper Cross-over).
+
 10 . Everyone PC was assigned the IP-adress
 - PC0 192.168.0.1
 - PC1 192.168.0.2
