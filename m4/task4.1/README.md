@@ -26,7 +26,7 @@
 8. I was deleted the IP adress from everyone PC. The transfer of the packages was failed.
 - ![8.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m4/task4.1/8.jpg)
 9. I created the new project with PC0-PC5, Server,2 Hubs. HUB0 was connected wih HUB1 via (Copper Cross-over).
-10 . Everyone PC and Server were assigned the IP-adress
+10 . Everyone PC was assigned the IP-adress
 - PC0 192.168.0.1
 - PC1 192.168.0.2
 - PC2 192.168.0.3
@@ -55,11 +55,19 @@
 - ![17.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m4/task4.1/17.jpg)
 18. I devided this network on two networks and conected it via Router-PT with several ports
 The hubs and switch were conected via **Fiber**
-19. Everyone (РС4 – РС7) and Server was assigned the IP-adress
-- PC0 192.168.0.1
-- PC1 192.168.0.2
-- PC2 192.168.0.3
-- PC3 192.168.0.4
-- PC4 192.168.0.5
+19. Everyone (РС4 – РС7) was assigned the IP-adress
+- PC4 192.168.1.1
+- PC5 192.168.1.2
+- PC6 192.168.1.3
+- PC7 192.168.1.4
+- the mask was : 255.255.255.0.
+20. Ports of switch were switched on  (On) and  assigned the IP-adress( 192.168.0.5, and another 192.168.1.5)
+- ![20.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m4/task4.1/20.jpg)
+21. Everyone PC ,from the first network (192.168.0.),was assigned  the **default gateway** 192.168.0.5 
+- Everyone PC ,from the second network (192.168.1.),was assigned  the **defaultgateway** 192.168.1.5 
+22.  I checked work of network 
+- ![22.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m4/task4.1/22.jpg)
+- ![23.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m4/task4.1/23.jpg)
+- 
 
 
