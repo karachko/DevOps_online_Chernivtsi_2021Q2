@@ -68,6 +68,11 @@ The hubs and switch were conected via **Fiber**
 22.  I checked work of network 
 - ![22.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m4/task4.1/22.jpg)
 - ![23.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m4/task4.1/23.jpg)
-- 
+23. 
+Switch and router - the difference between them:
 
+The switch lacks a WAN port, since it only works on the local network. The router is engaged in the transfer of data between different networks, and the switch cannot do this.
+The switch lacks Wi-Fi, it only switches packets on the Ethernet network.
+Perhaps the lack of remote control and, accordingly, all the functions that can be configured, as well as statistics.
+A switch usually has more LAN ports than a router.
 
