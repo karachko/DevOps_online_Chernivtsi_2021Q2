@@ -26,7 +26,7 @@
 8. I was deleted the IP adress from everyone PC. The transfer of the packages was failed.
 - ![8.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m4/task4.1/8.jpg)
 9. I created the new project with PC0-PC5, Server,2 Hubs. HUB0 was connected wih HUB1 via (Copper Cross-over).
-10 . Everyone PC and Server was assigned the IP-adress
+10 . Everyone PC and Server were assigned the IP-adress
 - PC0 192.168.0.1
 - PC1 192.168.0.2
 - PC2 192.168.0.3
@@ -42,7 +42,7 @@
 14. I created the new project with PC0-PC7, and 2 Switches. (all PS were connected with Switch via (Copper Straight-through)).Switche0 was connected wih Switche1 via (Copper Cross-over).
 15. I added neccecery ports on the Switch
 - ![15.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m4/task4.1/15.jpg)
-16.  Everyone PC and Server was assigned the IP-adress
+16.  Everyone PC and Server were assigned the IP-adress
 - PC0 192.168.0.1
 - PC1 192.168.0.2
 - PC2 192.168.0.3
@@ -53,5 +53,13 @@
 - the mask was : 255.255.255.0.
 17. I checked work of network 
 - ![17.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m4/task4.1/17.jpg)
+18. I devided this network on two networks and conected it via Router-PT with several ports
+The hubs and switch were conected via **Fiber**
+19. Everyone (РС4 – РС7) and Server was assigned the IP-adress
+- PC0 192.168.0.1
+- PC1 192.168.0.2
+- PC2 192.168.0.3
+- PC3 192.168.0.4
+- PC4 192.168.0.5
 
 
