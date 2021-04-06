@@ -21,8 +21,8 @@
 
 3. I configured RIP protocol on the Router0.
 -  ![rip.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m4/task4.3/rip.jpg)
-
+4. Everyone PC's and Servers ,from each network ,was assigned the default gateway.
  
-4. I checked the work of the network
+5. I checked the work of the network
  - ![succeseful.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m4/task4.3/succeseful.jpg)
  
