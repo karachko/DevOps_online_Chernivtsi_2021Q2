@@ -167,4 +167,8 @@
     - PC3(2)(2) 192.168.0.29
     - PC4(2)(2) 192.168.0.30
     - all PC's was connected with Switch0(2)(2) via (Copper Straight-through)).
-
+- Switch0,Switch0(2),Switch0(3),Switch0(2)(1),Switch0(2)(2) were connected with Switch1 via (Copper Cross-Over)).
+- Router2(port Fa2/0 ip adress 192.168.0.31) was connected with Switch1 via (Fiber)).
+-  The port of the Router2(Fa2/0) was switched on  (On)
+-  Everyone PC's ,from each network ,was assigned the default gateway192.168.0.31 .
+-  ![succesfull2.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m4/task4.2/task4.2.2/succesfull2.jpg)
