@@ -63,7 +63,7 @@ The hubs and switch were connected via **Fiber**
 - PC6 192.168.1.3
 - PC7 192.168.1.4
 - the mask was : 255.255.255.0.
-20. Ports of the switch were switched on  (On) and  assigned the IP-adress( one 192.168.0.5, and another 192.168.1.5)
+20. Ports of the Router-PT were switched on  (On) and  assigned the IP-adress( one 192.168.0.5, and another 192.168.1.5)
 - ![20.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m4/task4.1/20.jpg)
 21. Everyone PC's ,from the first network (192.168.0.),was assigned  the **default gateway** 192.168.0.5 
 - Everyone PC ,from the second network (192.168.1.),was assigned  the **default gateway** 192.168.1.5 
