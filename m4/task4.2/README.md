@@ -41,4 +41,4 @@
  
 3. I checked the work of the network
  - ![4-2-2.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m4/task4.2/4-2-2.jpg)
- - ![4-2-3.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m4/task4.2/4-2-3.jpg)
+ - ![4-2-2-3.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m4/task4.2/4-2-2-3.jpg)
