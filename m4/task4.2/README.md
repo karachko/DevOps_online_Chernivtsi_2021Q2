@@ -50,17 +50,17 @@
 - ![27-8-subnet.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m4/task4.2/task4.2.2/27-8-subnet.jpg)
 The 1 floor with 2 group of PC's(The first group-3 PC's, the second group -5  PC's).
     - Everyone PC's(The 1 floor, the first group) was assigned the IP-adress 
-    - PC0 192.168.0.1
-    - PC1 192.168.0.2
-    - PC2 192.168.0.3
+    - PC0 192.168.0.1/27
+    - PC1 192.168.0.2/27
+    - PC2 192.168.0.3/27
     - Everyone PC's(The 1 floor, the second group) was assigned the IP-adress 
-    - PC0(2) 192.168.0.33
-    - PC1(2) 192.168.0.34
-    - PC2(2) 192.168.0.35
-    - PC3(2) 192.168.0.36
-    - PC4(2) 192.168.0.37
+    - PC0(2) 192.168.0.33/27
+    - PC1(2) 192.168.0.34/27
+    - PC2(2) 192.168.0.35/27
+    - PC3(2) 192.168.0.36/27
+    - PC4(2) 192.168.0.37/27
     - all PC's from the first group was connected with Switch0 via (Copper Straight-through)).
     - all PC's from the second group was connected with Switch0(2) via (Copper Straight-through)).
-    - Switch0(port Fa4/1) was connected with Router2(port Fa 9/0) via Fiber.
-    - Switch0(2)(port Fa4/1) was connected with Router2(port Fa 5/0) via Fiber.
+    - Switch0(port Fa4/1) was connected with Router2(port Fa 9/0, ip adress 192.164.0.4/27 ) via Fiber.
+    - Switch0(2)(port Fa4/1) was connected with Router2(port Fa 5/0, ip adress 192.164.0.38/27) via Fiber.
 
