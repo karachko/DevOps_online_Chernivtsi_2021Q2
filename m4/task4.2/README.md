@@ -171,4 +171,5 @@
 - Router2(port Fa2/0 ip adress 192.168.0.31) was connected with Switch1 via (Fiber)).
 -  The port of the Router2(Fa2/0) was switched on  (On)
 -  Everyone PC's ,from each network ,was assigned the default gateway192.168.0.31 .
--  ![succesfull2.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m4/task4.2/task4.2.2/succesfull2.jpg)
+-  ![4-2-3-1.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m4/task4.2/task4.2.3/4-2-3-1.jpg)
+-  ![successuful.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m4/task4.2/task4.2.3/successuful.jpg)
