@@ -48,7 +48,8 @@
 - I created 8 subnets with the mask(/27)
 - ![27maska.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m4/task4.2/task4.2.2/27maska.jpg)
 - ![27-8-subnet.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m4/task4.2/task4.2.2/27-8-subnet.jpg)
-The 1 floor with 2 group of PC's(The first group-3 PC's, the second group -5  PC's).
+
+- The 1 floor with 2 group of PC's(The first group-3 PC's, the second group -5  PC's).
     - Everyone PC's(The 1 floor, the first group) was assigned the IP-adress 
     - PC0 192.168.0.1/27
     - PC1 192.168.0.2/27
@@ -63,4 +64,21 @@ The 1 floor with 2 group of PC's(The first group-3 PC's, the second group -5  PC
     - all PC's from the second group was connected with Switch0(2) via (Copper Straight-through)).
     - Switch0(port Fa4/1) was connected with Router2(port Fa 9/0, ip adress 192.164.0.4/27 ) via Fiber.
     - Switch0(2)(port Fa4/1) was connected with Router2(port Fa 5/0, ip adress 192.164.0.38/27) via Fiber.
+ 
+- The 2 floor with 2 group of PC's(The first group-3 PC's, the second group -5  PC's).
+    - Everyone PC's(The 2 floor, the first group) was assigned the IP-adress 
+    - PC0(1) 192.168.0.65/27
+    - PC1(1) 192.168.0.66/27
+    - PC2(1) 192.168.0.67/27
+    - Everyone PC's(The 2 floor, the second group) was assigned the IP-adress 
+    - PC0(3) 192.168.0.97/27
+    - PC1(3) 192.168.0.98/27
+    - PC2(3) 192.168.0.99/27
+    - PC3(3) 192.168.0.100/27
+    - PC4(3) 192.168.0.101/27
+    - all PC's from the first group was connected with Switch0(1) via (Copper Straight-through)).
+    - all PC's from the second group was connected with Switch0(3) via (Copper Straight-through)).
+    - Switch0(1)(port Fa4/1) was connected with Router2(port Fa 8/0, ip adress 192.164.0.68/27 ) via Fiber.
+    - Switch0(3)(port Fa4/1) was connected with Router2(port Fa 4/0, ip adress 192.164.0.102/27) via Fiber
+ 
 
