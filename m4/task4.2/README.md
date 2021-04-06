@@ -43,7 +43,7 @@
  - ![4-2-2.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m4/task4.2/4-2-2.jpg)
  - ![4-2-2-3.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m4/task4.2/4-2-2-3.jpg)
  
-## TASK2 #
+## TASK2 ##
 1. I created the network for 1 buildings with 4 floor. All floor's includs 2 group of PC's(The first group-3 PC's, the second group -5  PC's)
 - I created 8 subnets with the mask(/27)
 - ![27maska.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m4/task4.2/task4.2.2/27maska.jpg)
@@ -120,5 +120,23 @@
 -  ![succesfull1.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m4/task4.2/task4.2.2/successfull1.jpg)
 -  ![succesfull2.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m4/task4.2/task4.2.2/succesfull2.jpg)
 
- 
-
+## TASK3 ##
+ 1. I created the network for 5 buildings
+- The 1 building with 1 groups of 6 PC's. 
+    - Everyone PC's was assigned the IP-adress 
+    - PC0 192.168.0.1
+    - PC1 192.168.0.2
+    - PC2 192.168.0.3
+    - PC2(1) 192.168.0.4
+    - PC1(1) 192.168.0.5
+    - PC3 192.168.0.6 
+    - all PC's was connected with Switch0 via (Copper Straight-through)).
+ - The 2 building with 1 groups of 6 PC's. 
+    - Everyone PC's was assigned the IP-adress 
+    - PC0(2) 192.168.0.7
+    - PC1(2) 192.168.0.8
+    - PC2(2) 192.168.0.9
+    - PC3(2) 192.168.0.10
+    - PC4(2) 192.168.0.11
+    - PC4 192.168.0.12
+    - all PC's was connected with Switch0(2) via (Copper Straight-through)).
