@@ -31,13 +31,12 @@
     - PC4(3) 192.168.0.20
     - all PC's from the first group was connected with Switch0(2) via (Copper Straight-through)).
     - all PC's from the second group was connected with Switch0(3) via (Copper Straight-through)).
-3. 
- - ![1.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m4/task4.1/1.jpg)
-4. Everyone PC's was assigned the IP-adress 
-- PC0 192.168.0.1
-- PC1 192.168.0.2
-- PC2 192.168.0.3
-- PC3 192.168.0.4
- - ![31.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m4/task4.1/31.jpg)
+- The Switch0 was connected with Switch1 via (Copper Cross-Over)).
+- The Switch0(1) was connected with Switch1 via (Copper Cross-Over)).
+- The Switch0(2) was connected with Switch1 via (Copper Cross-Over)). 
+- The Switch0(3) was connected with Switch1 via (Copper Cross-Over)).
 
-- Under Static website hosting, I chose your Bucket website endpoin thttp://devopsnk.ua.s3-website.eu-north-1.amazonaws.com/.
+2. 
+ - ![4-2-1.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m4/task4.2/4-2-1.jpg)
+ 
+
