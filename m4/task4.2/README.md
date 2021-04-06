@@ -97,36 +97,22 @@
     - Switch0(4)(port Fa4/1) was connected with Router2(port Fa 7/0, ip adress 192.164.0.132/27 ) via Fiber.
     - Switch0(2)(1)(port Fa5/1) was connected with Router2(port Fa 3/0, ip adress 192.164.0.166/27) via Fiber
     
-- The 3 floor with 2 group of PC's(The first group-3 PC's, the second group -5  PC's).
-    - Everyone PC's(The 3 floor, the first group) was assigned the IP-adress 
-    - PC0(4) 192.168.0.129/27
-    - PC1(4) 192.168.0.130/27
-    - PC2(4) 192.168.0.131/27
-    - Everyone PC's(The 3 floor, the second group) was assigned the IP-adress 
-    - PC0(2)(1) 192.168.0.161/27
-    - PC1(2)(1) 192.168.0.162/27
-    - PC2(2)(1) 192.168.0.163/27
-    - PC3(2)(1) 192.168.0.164/27
-    - PC4(2)(1) 192.168.0.165/27
-    - all PC's from the first group was connected with Switch0(4) via (Copper Straight-through)).
-    - all PC's from the second group was connected with Switch0(2)(1) via (Copper Straight-through)).
-    - Switch0(4)(port Fa4/1) was connected with Router2(port Fa 7/0, ip adress 192.164.0.132/27 ) via Fiber.
-    - Switch0(2)(1)(port Fa5/1) was connected with Router2(port Fa 3/0, ip adress 192.164.0.166/27) via Fiber
+
  - The 4 floor with 2 group of PC's(The first group-3 PC's, the second group -5  PC's).
     - Everyone PC's(The  floor, the first group) was assigned the IP-adress 
-    - PC0(4) 192.168.0.129/27
-    - PC1(4) 192.168.0.130/27
-    - PC2(4) 192.168.0.131/27
+    - PC0(5) 192.168.0.193/27
+    - PC1(5) 192.168.0.194/27
+    - PC2(5) 192.168.0.195/27
     - Everyone PC's(The 3 floor, the second group) was assigned the IP-adress 
-    - PC0(2)(1) 192.168.0.161/27
-    - PC1(2)(1) 192.168.0.162/27
-    - PC2(2)(1) 192.168.0.163/27
-    - PC3(2)(1) 192.168.0.164/27
-    - PC4(2)(1) 192.168.0.165/27
-    - all PC's from the first group was connected with Switch0(4) via (Copper Straight-through)).
-    - all PC's from the second group was connected with Switch0(2)(1) via (Copper Straight-through)).
-    - Switch0(4)(port Fa4/1) was connected with Router2(port Fa 7/0, ip adress 192.164.0.132/27 ) via Fiber.
-    - Switch0(2)(1)(port Fa5/1) was connected with Router2(port Fa 3/0, ip adress 192.164.0.166/27) via Fiber
+    - PC0(2)(2) 192.168.0.225/27
+    - PC1(2)(2) 192.168.0.226/27
+    - PC2(2)(2) 192.168.0.227/27
+    - PC3(2)(2) 192.168.0.228/27
+    - PC4(2)(2) 192.168.0.229/27
+    - all PC's from the first group was connected with Switch0(5) via (Copper Straight-through)).
+    - all PC's from the second group was connected with Switch0(2)(2) via (Copper Straight-through)).
+    - Switch0(5)(port Fa4/1) was connected with Router2(port Fa 6/0, ip adress 192.164.0.196/27 ) via Fiber.
+    - Switch0(2)(2)(port Fa4/1) was connected with Router2(port Fa 2/0, ip adress 192.164.0.230/27) via Fiber
  
 
  
