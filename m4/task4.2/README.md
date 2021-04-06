@@ -45,6 +45,22 @@
  
 ## TASK2 #
 1. I created the network for 1 buildings with 4 floor. All floor's includs 2 group of PC's(The first group-3 PC's, the second group -5  PC's)
-- I created 8 subnets with the mask(27)
--
-   - 
+- I created 8 subnets with the mask(/27)
+- ![27maska.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m4/task4.2/task4.2.2/27maska.jpg)
+- ![27-8-subnet.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m4/task4.2/task4.2.2/27-8-subnet.jpg)
+The 1 floor with 2 group of PC's(The first group-3 PC's, the second group -5  PC's).
+    - Everyone PC's(The 1 floor, the first group) was assigned the IP-adress 
+    - PC0 192.168.0.1
+    - PC1 192.168.0.2
+    - PC2 192.168.0.3
+    - Everyone PC's(The 1 floor, the second group) was assigned the IP-adress 
+    - PC0(2) 192.168.0.33
+    - PC1(2) 192.168.0.34
+    - PC2(2) 192.168.0.35
+    - PC3(2) 192.168.0.36
+    - PC4(2) 192.168.0.37
+    - all PC's from the first group was connected with Switch0 via (Copper Straight-through)).
+    - all PC's from the second group was connected with Switch0(2) via (Copper Straight-through)).
+    - Switch0(port Fa4/1) was connected with Router2(port Fa 9/0) via Fiber.
+    - Switch0(2)(port Fa4/1) was connected with Router2(port Fa 5/0) via Fiber.
+
