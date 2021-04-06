@@ -158,4 +158,13 @@
     - PC2(2)(1) 192.168.0.23
     - PC3(2)(1) 192.168.0.24
     - all PC's was connected with Switch0(2)(1) via (Copper Straight-through)).
+- The 5 building with 1 groups of 6 PC's. 
+    - Everyone PC's was assigned the IP-adress 
+    - PC10 192.168.0.25
+    - PC0(2)(2) 192.168.0.26
+    - PC1(2)(2) 192.168.0.27
+    - PC2(2)(2) 192.168.0.28
+    - PC3(2)(2) 192.168.0.29
+    - PC4(2)(2) 192.168.0.30
+    - all PC's was connected with Switch0(2)(2) via (Copper Straight-through)).
 
