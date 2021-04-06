@@ -117,8 +117,8 @@
 -  Everyone PC's ,from each network ,was assigned the default gateway.
 -  ![final.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m4/task4.2/task4.2.2/final.jpg)
 -  I checked the work of the network
--  ![succesfull1.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m4/task4.2.2/succesfull1.jpg)
--  ![succesfull2.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m4/task4.2.2/succesfull2.jpg)
+-  ![succesfull1.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m4/task4.2/task4.2.2/successfull1.jpg)
+-  ![succesfull2.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m4/task4.2/task4.2.2/succesfull2.jpg)
 
  
 
