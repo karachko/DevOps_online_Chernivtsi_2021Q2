@@ -42,3 +42,9 @@
 3. I checked the work of the network
  - ![4-2-2.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m4/task4.2/4-2-2.jpg)
  - ![4-2-2-3.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m4/task4.2/4-2-2-3.jpg)
+ 
+## TASK2 #
+1. I created the network for 1 buildings with 4 floor. All floor's includs 2 group of PC's(The first group-3 PC's, the second group -5  PC's)
+- I created 8 subnets with the mask(27)
+-
+   - 
