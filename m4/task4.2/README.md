@@ -172,4 +172,5 @@
 -  The port of the Router2(Fa2/0) was switched on  (On)
 -  Everyone PC's ,from each network ,was assigned the default gateway192.168.0.31 .
 -  ![4-2-3-1.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m4/task4.2/task4.2.3/4-2-3-1.jpg)
+-  I checked the work of the network
 -  ![successuful.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m4/task4.2/task4.2.3/successuful.jpg)
