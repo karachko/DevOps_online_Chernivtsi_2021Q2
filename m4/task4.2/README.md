@@ -113,7 +113,12 @@
     - all PC's from the second group was connected with Switch0(2)(2) via (Copper Straight-through)).
     - Switch0(5)(port Fa4/1) was connected with Router2(port Fa 6/0, ip adress 192.164.0.196/27 ) via Fiber.
     - Switch0(2)(2)(port Fa4/1) was connected with Router2(port Fa 2/0, ip adress 192.164.0.230/27) via Fiber
- 
+-  Ports of the Router2(Fa2/0-Fa9/0) were switched on  (On)
+-  Everyone PC's ,from each network ,was assigned the default gateway.
+-  ![final.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m4/task4.2/final.jpg)
+-  I checked the work of the network
+-  ![succesfull1.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m4/task4.2/succesfull1.jpg)
+-  ![succesfull2.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m4/task4.2/succesfull2.jpg)
 
  
 
