@@ -148,7 +148,7 @@
     - PC3(3) 192.168.0.16
     - PC4(3) 192.168.0.17
     - PC7 192.168.0.18
-    - all PC's were connected with Switch0(2) via (Copper Straight-through)).
+    - all PC's were connected with Switch0(3) via (Copper Straight-through)).
 - The 4 building with 1 group of 6 PC's. 
     - Everyone PC's was assigned the IP-address 
     - PC0(2)(1) 192.168.0.19
@@ -160,7 +160,7 @@
     - all PC's were connected with Switch0(2)(1) via (Copper Straight-through)).
 - The 5 building with 1 group of 6 PC's. 
     - Everyone PC's was assigned the IP-adress 
-    - PC10 192.168.0.25
+    - PC 192.168.0.25
     - PC0(2)(2) 192.168.0.26
     - PC1(2)(2) 192.168.0.27
     - PC2(2)(2) 192.168.0.28
