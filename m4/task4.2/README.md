@@ -130,7 +130,7 @@
     - PC2(1) 192.168.0.4
     - PC1(1) 192.168.0.5
     - PC3 192.168.0.6 
-    - all PC's was connected with Switch0 via (Copper Straight-through)).
+    - all PC's were connected with Switch0 via (Copper Straight-through)).
 - The 2 building with 1 group of 6 PC's. 
     - Everyone PC's was assigned the IP-address 
     - PC0(2) 192.168.0.7
@@ -139,7 +139,7 @@
     - PC3(2) 192.168.0.10
     - PC4(2) 192.168.0.11
     - PC4 192.168.0.12
-    - all PC's was connected with Switch0(2) via (Copper Straight-through)).
+    - all PC's were connected with Switch0(2) via (Copper Straight-through)).
 - The 3 building with 1 group of 6 PC's. 
     - Everyone PC's was assigned the IP-address 
     - PC0(3) 192.168.0.13
@@ -148,7 +148,7 @@
     - PC3(3) 192.168.0.16
     - PC4(3) 192.168.0.17
     - PC7 192.168.0.18
-    - all PC's was connected with Switch0(2) via (Copper Straight-through)).
+    - all PC's were connected with Switch0(2) via (Copper Straight-through)).
 - The 4 building with 1 group of 6 PC's. 
     - Everyone PC's was assigned the IP-address 
     - PC0(2)(1) 192.168.0.19
@@ -157,7 +157,7 @@
     - PC1(2)(1) 192.168.0.22
     - PC2(2)(1) 192.168.0.23
     - PC3(2)(1) 192.168.0.24
-    - all PC's was connected with Switch0(2)(1) via (Copper Straight-through)).
+    - all PC's were connected with Switch0(2)(1) via (Copper Straight-through)).
 - The 5 building with 1 group of 6 PC's. 
     - Everyone PC's was assigned the IP-adress 
     - PC10 192.168.0.25
@@ -166,7 +166,7 @@
     - PC2(2)(2) 192.168.0.28
     - PC3(2)(2) 192.168.0.29
     - PC4(2)(2) 192.168.0.30
-    - all PC's was connected with Switch0(2)(2) via (Copper Straight-through)).
+    - all PC's were connected with Switch0(2)(2) via (Copper Straight-through)).
 - Switch0,Switch0(2),Switch0(3),Switch0(2)(1),Switch0(2)(2) were connected with Switch1 via (Copper Cross-Over)).
 - Router2(port Fa2/0 ip address 192.168.0.31) was connected with Switch1 via (Fiber)).
 -  The port of the Router2(Fa2/0) was switched on  (On)
