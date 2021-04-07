@@ -14,8 +14,8 @@
     - PC2(1) 192.168.0.8
     - PC3(1) 192.168.0.9
     - PC4(1) 192.168.0.10
-    - all PC's from the first group was connected with Switch0 via (Copper Straight-through)).
-    - all PC's from the second group was connected with Switch0(1) via (Copper Straight-through)).
+    - all PC's from the first group were connected with Switch0 via (Copper Straight-through)).
+    - all PC's from the second group were connected with Switch0(1) via (Copper Straight-through)).
 -  The second building with 2 groups of 5 PC's. 
     - Everyone PC's(The second  building, the first group, the first floor) was assigned the IP-address 
     - PC0(2) 192.168.0.11
@@ -29,8 +29,8 @@
     - PC2(3) 192.168.0.18
     - PC3(3) 192.168.0.19
     - PC4(3) 192.168.0.20
-    - all PC's from the first group was connected with Switch0(2) via (Copper Straight-through)).
-    - all PC's from the second group was connected with Switch0(3) via (Copper Straight-through)).
+    - all PC's from the first group were connected with Switch0(2) via (Copper Straight-through)).
+    - all PC's from the second group were connected with Switch0(3) via (Copper Straight-through)).
 - The Switch0 was connected with Switch1 via (Copper Cross-Over)).
 - The Switch0(1) was connected with Switch1 via (Copper Cross-Over)).
 - The Switch0(2) was connected with Switch1 via (Copper Cross-Over)). 
@@ -44,7 +44,7 @@
  - ![4-2-2-3.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m4/task4.2/4-2-2-3.jpg)
  
 ## TASK2 ##
-1. I created the network for 1 building with 4 floors. All floor's includes 2 group of PC's(The first group-3 PC's, the second group -5  PC's)
+1. I created the network for 1 building with 4 floors. All floors includes 2 groups of PC's(The first group-3 PC's, the second group -5  PC's)
 - I created 8 subnets with the mask(/27)
 - ![27maska.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m4/task4.2/task4.2.2/27maska.jpg)
 - ![27-8-subnet.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m4/task4.2/task4.2.2/27-8-subnet.jpg)
