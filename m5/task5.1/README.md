@@ -18,9 +18,9 @@ d выводит краткое предназначение по запраши
 s выводит информацию только для использования синтаксиса по запрашиваемой команде.`
 
 5.1.1. passwd --help
-![5.1.1.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/edit/main/m5/task5.1/5.1.1.jpg)
+![5.1.1.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m5/task5.1/5.1.1.jpg)
  
-5.1.2. ![5.1.2.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/edit/main/m5/task5.1/5.1.2.jpg)
+5.1.2. ![5.1.2.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m5/task5.1/5.1.2.jpg)
 
 5.2.  **man** command in Linux is used to display the user manual of any command that we can run on the terminal.
 - w option: This option returns the location in which the manual page of a given command is present.
@@ -51,9 +51,9 @@ s выводит информацию только для использован
 - cat /usr/share/doc/xz-utils/extra/7z2lzma/7z2lzma.bash | less
                                                             
 7. I Described in plans that you are working on laboratory work 
- ![7.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/edit/main/m5/task5.1/7.jpg)
+ ![7.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m5/task5.1/7.jpg)
 8. I Listed the contents of the home directory
- ![8.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/edit/main/m5/task5.1/8.jpg)
+ ![8.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m5/task5.1/8.jpg)
 
 
 part2
