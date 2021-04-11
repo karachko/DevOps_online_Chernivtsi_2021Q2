@@ -129,11 +129,15 @@ s выводит информацию только для использован
 - The links (hard_lnk_labwork2) and (symb_lnk_labwork2 -> labwork2) stayed. When I opened the hard_lnk_labwork2, the file labwork was opened. 
   
 
-7.
+7. I Used the locate utility to find all files that contain the squid and traceroute
+sequence
+- 2.7.jpg![2.7.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m5/task5.1/2.7.jpg)
 2.7.jpg
-8.
+8. I determined which partitions are mounted in the system
 2.8.jpg
-9.????
+- 2.7.jpg![2.8.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m5/task5.1/2.8.jpg)
+9. I Counted the number of lines containing a given sequence of characters in a given
+file.
 10.
 find /etc -name "host"
 2.10.jpg
