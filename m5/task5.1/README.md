@@ -11,7 +11,7 @@
 3. I determined the users registered in the system by using the command (cat /etc/passwd)
 4. I changed the personal information by using the command (usermod -c "YOUR NAME" username)
 5. I familiared with the Linux help system and the man and info commands 
-5.1. ** help **
+5.1. **help**
 ` help — Показывает информацию о встроенных командах в Linux
 d выводит краткое предназначение по запрашиваемой команде.
 м выводит информации в формате псевдо-Man-страницы.
@@ -22,19 +22,19 @@ s выводит информацию только для использован
  
 5.1.2. ![5.1.2.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/edit/main/m5/task5.1/5.1.2.jpg)
 
-5.2.  ** man ** command in Linux is used to display the user manual of any command that we can run on the terminal.
--  -w option: This option returns the location in which the manual page of a given command is present.
--  man -w passwd
-- /usr/share/man/man1/passwd.1.gz
-- -k option: This option searches the given command as a regular expression in all the manuals and it returns the manual pages with the - section number in which it is found.
-- root@WIN-LVJOCDBKSR3:/etc# man -k passwd
-- chgpasswd (8)        - update group passwords in batch mode
-- chpasswd (8)         - update passwords in batch mode
-- gpasswd (1)          - administer /etc/group and /etc/gshadow
-- grub-mkpasswd-pbkdf2 (1) - generate hashed password for GRUB
-- openssl-passwd (1ssl) - compute password hashes
-- pam_localuser (8)    - require users to be listed in /etc/passwd
-- passwd (1)           - change user password
+5.2.  **man** command in Linux is used to display the user manual of any command that we can run on the terminal.
+- w option: This option returns the location in which the manual page of a given command is present.
+    - man -w passwd
+    - /usr/share/man/man1/passwd.1.gz
+- k option: This option searches the given command as a regular expression in all the manuals and it returns the manual pages with the  section number in which it is found.
+    - root@WIN-LVJOCDBKSR3:/etc# man -k passwd
+    - chgpasswd (8)        - update group passwords in batch mode
+    - chpasswd (8)         - update passwords in batch mode
+    - gpasswd (1)          - administer /etc/group and /etc/gshadow
+    - grub-mkpasswd-pbkdf2 (1) - generate hashed password for GRUB
+    - openssl-passwd (1ssl) - compute password hashes
+    - pam_localuser (8)    - require users to be listed in /etc/passwd
+    - passwd (1)           - change user password
  
 5.3.
 The info format is similar to that of man, the traditional Unix manual format. 
