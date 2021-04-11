@@ -135,24 +135,30 @@ sequence
 2.7.jpg
 8. I determined which partitions are mounted in the system
 2.8.jpg
-- 2.7.jpg![2.8.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m5/task5.1/2.8.jpg)
+- ![2.8.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m5/task5.1/2.8.jpg)
 9. I Counted the number of lines containing a given sequence of characters in a given
 file.
-10.
-find /etc -name "host"
+- grep -c sudo hard_lnk_labwork2
+10.  I found all files in the /etc directory containing the
+host
+- find /etc -name "host"
 2.10.jpg
-11.
+- ![2.10.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m5/task5.1/2.10.jpg)
 
+11. I Listed all objects in /etc that contain the ss character sequence. 
+- ![2.11.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m5/task5.1/2.11.jpg)
+- ![2.11.1.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m5/task5.1/2.11.1.jpg)
 2.11.jpg
 2.11.1.jpg
-12.
-find /etc >> 1.txt | more
-13.
+12. I Organized a screen-by-screen print of the contents of the /etc directory.
+find /etc | less >> 1.txt
+13. I determinated the types of devices
 13.jpg
-14.
-file file.txt
-file.txt: ASCII text
-2.14.jpg
+- ![13.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m5/task5.1/13.jpg)
+14.  I determinated the type of file
+- file 1.txt
+- 1.txt: UTF-8 Unicode text
+
 15.
 /etc/security/access.conf
 /etc/passwd
