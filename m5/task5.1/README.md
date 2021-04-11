@@ -109,31 +109,25 @@ s выводит информацию только для использован
 -  mkdir test
 - .bash_history- Это файл в котором хранится история вводимых команд
 Находится в домашней папке пользователя
-- cp .bash_history ./test
+- cp -r .bash_history ./test
 - ls -la
 - mv .bash_history labwork2
 - I created hard link
     - ln labwork2 lnlab2
-    - ubuntu@WIN-LVJOCDBKSR3:~/test$ ls -l
-    - total 8
-    - -rw------- 2 ubuntu ubuntu 3390 Apr  9 13:20 labwork2
-    - -rw------- 2 ubuntu ubuntu 3390 Apr  9 13:20 lnlab2
+    
 - I created soft link
     - ubuntu@WIN-LVJOCDBKSR3:~/test$ ln -s labwork2 lnlabsoft2
-    - ubuntu@WIN-LVJOCDBKSR3:~/test$ ls -l
-    - total 8
-    - rw------- 2 ubuntu ubuntu 3390 Apr  9 13:20 labwork2
-    - rw------- 2 ubuntu ubuntu 3390 Apr  9 13:20 lnlab2
-    - lrwxrwxrwx 1 ubuntu ubuntu    8 Apr  9 13:30 lnlabsoft2 -> labwork2
+    
 
 - A soft link is similar to the file shortcut feature which is used in Windows Operating systems.
 - Each hard linked file is assigned the same Inode value as the original, therefore they reference the same physical file location.
 -  nano lnlabsoft2
    I wrote  help
-- mv labwork2 hard_lnk_labwork2
+- mv lnlab2 hard_lnk_labwork2
 - mv lnlabsoft2 symb_lnk_labwork2
 - rm labwork2
-- rm: cannot remove 'labwork2': No such file or directory
+- The links (hard_lnk_labwork2) and (symb_lnk_labwork2 -> labwork2) stayed. When I opened the hard_lnk_labwork2, the file labwork was opened. 
+  
 
 7.
 2.7.jpg
@@ -161,6 +155,10 @@ file.txt: ASCII text
 /etc/ssh/sshd_config
 /etc/ufw/applications.d/openssh-server
 /etc/ssl/openssl.cnf
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+ 
 
 
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
