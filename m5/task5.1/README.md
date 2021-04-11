@@ -1,110 +1,214 @@
-4. I created my own VM in the AWS cloud and connect to it
-- I selected Light sail from All services
-- I selected platform Linux/Unix (1.jpg)
-- I downloded Default SSH key pair (LightsailDefaultKey-eu-west-2.pem)
-- I pressed the button Create Instance
-- I selected new Light sail instance from Instances and seected WorldPress-1
-- From drop-down list I select Connect(2.jpg)
-- I connected to the instance WorldPress-1(3.jpg)
-5. I selected EC2 from All services
-- I selected Key Pair from Network&Security and pressed Create key pair
-- I entered the Name-Ec2Key and File Format ppk and pressed Create key pair
-- I Opened the Amazon EC2 console
-- I selected Launch instance
-- I selected Amazon Linux 2 AMI(4.jpg)
-- I chose Instant Type t2.micro
-- I selected Auto-assign Public IP-Enable
-- I selected Launch  and key pair Ec2Key
-- I creted user ec2user
-- I Connected to your Linux instance from Windows using PuTTY(1.1 In the setting Hostname i entered Public Ip of created instance.  1.2.In the setting SSH-Auth-Private key i selected my Ec2Key)
+# TASK 5.1 #
 
-6. I select Elastic Block Store-Snapshots-create snapshot
-- I selected resource type- Instance,instance ID-i-072d1bb432f7905d5,descriotion mysnapshot
-- The screenshot had been created (6.jpg)                  
-7.  I select Elastic Block Store- Volumes > Create Volume
-- I entered Size 1- Gb,  and pressed Create Volume.the volume vol-01015f4bcb4c1f5e2 has been created
-- I stopped my instance i-0a20fc4f992584ccd
-- I selected Elastic Block Store- Volumes and rightclicked on my created volume and selected Attached volume.   Instance i-01ab1016ea4edc96e. Device- Disk_D
-he message was appeared Error attaching volume: Value (Disk_D) for parameter device is invalid. Disk_D is not a valid EBS device name.
-- Changed the name of device to /dev/sdf
-- The volume has been created(7.jpg)
-- in the terminal(EC2 Instance Connect)
+![4.3.1.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m4/task4.3/4.3.1.jpg)
  
-- Format the new partition as an ext3 file system type:
-- sudo /sbin/mkfs -t ext3 /dev/sdf
-- I cteated the mounted point 
-- sudo mkdir -p /mnt/Disk_D 
-- I mounted the new partishion Disk_D
-- sudo mount /dev/sdf /mnt/Disk_D
-- cd /mnt/Disk_D
-- touch file 1.txt
+1. I loged in to the system as root (su root)
+2. I changed the password  by using the command (passwd username)
+- The file /etc/passwd contained the information about users
+- The parameters of command passwd:
+- -d, --delete (to delete an user)
+- -h, --help (to display help)
+- -l, --lock(to lock an user)
+- -S, --status(to display a status of user)
 
-8.Delete The EC2 Instance(i selected the instance(i-0d1c10dadcd03b627) and chose Instance state-Terminate instance)
+4)usermod -c "YOUR NAME" username
+5)   5.1help 
+	
+5.1.1 passwd --help
+Usage: passwd [options] [LOGIN]
+
+Options:
+  -a, --all                     report password status on all accounts
+  -d, --delete                  delete the password for the named account
+  -e, --expire                  force expire the password for the named account
+  -h, --help                    display this help message and exit
+  -k, --keep-tokens             change password only if expired
+ 
+5.1.2.passwd -d --help
+Usage: passwd [options] [LOGIN]
+
+Options:
+  -a, --all                     report password status on all accounts
+  -d, --delete                  delete the password for the named account
+  -e, --expire                  force expire the password for the named account
+  -h, --help                    display this help message and exit
+5.2 man command in Linux is used to display the user manual of any command that we can run on the terminal.
+-w option: This option returns the location in which the manual page of a given command is present.
+ man -w passwd
+/usr/share/man/man1/passwd.1.gz
+. -k option: This option searches the given command as a regular expression in all the manuals and it returns the manual pages with the section number in which it is found.
+man -w passwd
+root@WIN-LVJOCDBKSR3:/etc# man -k passwd
+chgpasswd (8)        - update group passwords in batch mode
+chpasswd (8)         - update passwords in batch mode
+gpasswd (1)          - administer /etc/group and /etc/gshadow
+grub-mkpasswd-pbkdf2 (1) - generate hashed password for GRUB
+openssl-passwd (1ssl) - compute password hashes
+pam_localuser (8)    - require users to be listed in /etc/passwd
+passwd (1)           - change user password
+5.3
+The info format is similar to that of man, the traditional Unix manual format. 
+-d, --directory=DIR	Add DIR to INFOPATH.
+--version	Display version information and exit.
+
+5.3.1   info passwd
+PASSWD(1)                                           User Commands                                           PASSWD(1)
+
+NAME
+       passwd - change user password
+
+SYNOPSIS
+       passwd [options] [LOGIN]
+
+DESCRIPTION
+       The passwd command changes passwords for user accounts. A normal user may only change the password for their
+       own account, while the superuser may change the password for any account.  passwd also changes the account or
+       associated password validity period.
+
+ 5.3.2 info --version
+info (GNU texinfo) 6.7
+
+Copyright (C) 2019 Free Software Foundation, Inc.
+
+6. 6.1 less --help
+  SUMMARY OF LESS COMMANDS
+
+      Commands marked with * may be preceded by a number, N.
+      Notes in parentheses indicate the behavior if N is given.
+      A key preceded by a caret indicates the Ctrl key; thus ^K is ctrl-K.
+6.2  more --help
+
+Usage:
+ more [options] <file>...
+
+A file perusal filter for CRT viewing.
+
+Options:
+ -d          display help instead of ringing bell
+ -f          count logical rather than screen lines
+ -l          suppress pause after form feed
+ -c          do not scroll, display text and clean line ends
+
+6.3
+ubuntu@WIN-LVJOCDBKSR3:~$ nano passw.sh
+ubuntu@WIN-LVJOCDBKSR3:~$ chmod +x passw.sh
+ubuntu@WIN-LVJOCDBKSR3:~$ less passw.sh
+
+passwd
+
+passw.sh (END)                                                             
+7. 7.jpg
+8.8.jpg
 
 
-I select Elastic Block Store-Snapshots-
+part2
+1) 2.1.2.jpg
+2) 2.2.jpg
+3)  An absolute path always contains the root element and the complete directory list required to locate the file. For example, /home/sally/statusReport is an absolute path.
+The relative path begins with a dot (period), representing the current directory (also called the "working directory"). The relative path ./public_html/cgi-bin is valid only if the current directory contains a path named public_html which contains a directory named cgi-bin. 
+2.3.jpg
 
-- right-click on the snapshot snap-0a9c23abae5a9ce74(it is the snapshot of the instance(i-0d1c10dadcd03b627) ) and chose in the menu Actions-Create Image(9.jpg). I fulfilled the field Name -NewVM, description- RestoreVM, Vitualization type-Hardware-assistent virtualization and pressed the button Create. 
-The imade In the Images-AMIs had been created(10.jpg)
-I pressed the Launch and created the new VM from the image
-9.
-- I selected Elastic Block Store- Volumes 
-- I selected vol-060084c2a8de22001 with Disk_D and select detach volume
-- I selected vol-060084c2a8de22001 with Disk_D and select atttach volume to the new - instance and selected the created instance
+To refer to something two levels up in the directory tree one would use the prefix ../../, and so forth.
+2.3.1.jpg
+To navigate into the root directory, use "cd /"
+
+To navigate to your home directory, use "cd" or "cd ~"
+
+To navigate up one directory level, use "cd .."
+
+To navigate to the previous directory (or back), use "cd -"
+
+To navigate through multiple levels of directory at once, specify the full directory path that you want to go to. For example, use, "cd /var/www" to go directly to the /www subdirectory of /var/. As another example, "cd ~/Desktop" will move you to the Desktop subdirectory inside your home directory.
+Example
+ubuntu@WIN-LVJOCDBKSR3:~/reldir$ cd /home
+ubuntu@WIN-LVJOCDBKSR3:/home$ cd ~/reldir
+ubuntu@WIN-LVJOCDBKSR3:~/reldir$
+
+4)2.4.jpg
+5)
+-  mkdir newdir
+cd newdir
+-  ls -a >> infofile
+
+
+- ubuntu@WIN-LVJOCDBKSR3:~/newdir$ cat infofile
+.
+..
+infofile
+-     -   ubuntu@WIN-LVJOCDBKSR3:~/newdir$ cp infofile ../
+ubuntu@WIN-LVJOCDBKSR3:~/newdir$ cd ../
+ubuntu@WIN-LVJOCDBKSR3:~$ ls
+1.txt  2  2.txt  infofile  newdir  passw.sh  reldir  user.conf
+ubuntu@WIN-LVJOCDBKSR3:~$
+      -     cp /home/ubuntu/newdir/infofile /home/ubuntu
+- rm -R newdir
+-  rm infofle
+
+6. 
+-  mkdir test
+Это файл в котором хранится история вводимых команд
+Находится в домашней папке пользователя
+- cp .bash_history ./test
+  ls -la
+total 4
+drwxrwxrwx 1 ubuntu ubuntu  512 Apr  9 13:20 .
+drwxr-xr-x 1 ubuntu ubuntu  512 Apr  9 13:08 ..
+-rw------- 1 ubuntu ubuntu 3390 Apr  9 13:20 .bash_history
+
+ mv .bash_history labwork2
+-create hard link
+ln labwork2 lnlab2
+ubuntu@WIN-LVJOCDBKSR3:~/test$ ls -l
+total 8
+-rw------- 2 ubuntu ubuntu 3390 Apr  9 13:20 labwork2
+-rw------- 2 ubuntu ubuntu 3390 Apr  9 13:20 lnlab2
+- create soft link
+   ubuntu@WIN-LVJOCDBKSR3:~/test$ ln -s labwork2 lnlabsoft2
+ubuntu@WIN-LVJOCDBKSR3:~/test$ ls -l
+total 8
+-rw------- 2 ubuntu ubuntu 3390 Apr  9 13:20 labwork2
+-rw------- 2 ubuntu ubuntu 3390 Apr  9 13:20 lnlab2
+lrwxrwxrwx 1 ubuntu ubuntu    8 Apr  9 13:30 lnlabsoft2 -> labwork2
+
+-A soft link is similar to the file shortcut feature which is used in Windows Operating systems.
+Each hard linked file is assigned the same Inode value as the original, therefore they reference the same physical file location.
+
+
+-  nano lnlabsoft2
+  write help
+
+- mv labwork2 hard_lnk_labwork2
+  mv lnlabsoft2 symb_lnk_labwork2
+ rm labwork2
+rm: cannot remove 'labwork2': No such file or directory
+
+7.
+2.7.jpg
+8.
+2.8.jpg
+9.????
 10.
-I created my own VM in the AWS cloud and connect to it
-- I selected Light sail from All services
-- I selected platform Linux/Unix (1.jpg)
-- I downloded Default SSH key pair (LightsailDefaultKey-eu-west-2.pem)
-- I pressed the button Create Instance
-- I selected new Light sail instance from Instances and seected WorldPress-1
-- From drop-down list I select Connect(2.jpg)
-- I connected to the instance WorldPress-1(3.jpg)
-- On the Instances tab of the Lightsail home page, chose the SSH quick-connect icon for WorldPress-1 instance.
-- After the browser-based SSH client window opens, enter the following command to retrieve the default application password:
-cat $HOME/bitnami_application_password
-Make note of the password displayed on the screen.
- - In a browser, go to:
-http://35.178.110.82/wp-login.php
-Log into your instance. 
-Choose the Networking tab, then choose Create static IP.- and create statistic IP
-On the Networking tab of the Lightsail home page, choose Create DNS zone. and create DNS zone
-11. 
-- I selected Storedge-S3- and pushed the button- Create buscket. I fullfilled fields with - Buscket name -"mybucketkarachko" and pushed the button- Create buscket
-(12.jpg)
-- In the menu Amazon S3 I chose Buckets and clicked on the mybucketkarachko
-- To upload files in the buckets i pushed the button- Upload. I pushed the button- Add files and selected the file, pushed the button Open,pushed the button -Upload-. The file had been uploded to the bucket(14.jpg)
-- To download file in mybucketkarachko, I selected 1.jpg and selected Download 
-12. 
--I created the new user AWS IAM. I selected AWS management console - IAM. I clecked on user and presssed the button Add user. i fullfiled fields with(Username-AWS_Admin, Access type-Programmatic Access). I chose Attach existing policies directly- AdministratorAccess on the next page.I pushed the button Next tags-Review-Create User.I pushed the button Downloaded .csv
--I downloaded and installe AWSCLI64.msi.I launched CMD in Windows. I executed the command
-aws configure. I entered Access Key Id, Secret Access Key from the credentials.csv.Default region name - us-east-1 and Default output format -json. I entered aws s3 cp "D:\2.jpg" s3://mybucketkarachko/ in CMD. The file 2.jpg had been downloaded on the server in mybucketkarachko
-13. 
-I review the 10-minute example and explored the possibilities of creating my own domain
-and domain name for my site.
+find /etc -name "host"
+2.10.jpg
+11.
+
+2.11.jpg
+2.11.1.jpg
+12.
+find /etc >> 1.txt | more
+13.
+13.jpg
 14.
-I  Started with Amazon Elastic Container Service (Amazon ECS) using Fargate.
-I chose container sample-app(image:httpd:2.4),presssed the button Next,selected Load Balancer type -Application Load Balancer,presssed the button Create. I pressed the button View service (17.jpg).I clicked tne EC2Co-Defau-V0B43JYXVZRL in the Load Balancing(18.jpg). I selected EC2Co-EcsEl-W62ISGHEKYA(EC2-Load Balncing-Load Balancers)(19.jpg)
-and copied DNS name EC2Co-EcsEl-W62ISGHEKYA-767129557.us-east-1.elb.amazonaws.com in the browser. I opened that link(20.jpg)
+file file.txt
+file.txt: ASCII text
+2.14.jpg
 15.
-- I created the bucked with name-devopsnk.ua and AWS Region EU(Stockholm)(S3-Create buscket). In the S3-buckets I selected devopsnk.ua -Proreties.Under Static website hosting, I chose Edit.Under Static website hosting, I chose Enable. On the page Edit static website hosting I checked the Static website hosting to Enable. I fullfilled fields(Index document-index.html,Error document-404.html).I pushed the button Save Changes
-- I chose the buscket devopsnk.ua in Amazon S3-buckets. I chose-Permision.Under Block public access (bucket settings), I choose Edit. I unchecked "Block all public access".I pushed the button Save Changes.Under Bucket Policy, I choose Edit.I copied the the bucket policy, and paste it in the Bucket policy editor.``` {
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Sid": "PublicReadGetObject",
-            "Effect": "Allow",
-            "Principal": "*",
-            "Action": [
-                "s3:GetObject"
-            ],
-            "Resource": [
-                "arn:aws:s3:::devopsnk.ua/*"
-            ]
-        }
-    ]
-}```
-I pushed the button Save Changes
-- I uploded configured files(index.html, foto, style.css) and uploaded to the bucket "devopsnk.ua"
-- I uploded configured 404.html and uploaded to the bucket "devopsnk.ua"
-- Under Static website hosting, I chose your Bucket website endpoin thttp://devopsnk.ua.s3-website.eu-north-1.amazonaws.com/.
+/etc/security/access.conf
+/etc/passwd
+/etc/ssh/sshd_config
+/etc/ufw/applications.d/openssh-server
+/etc/ssl/openssl.cnf
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+ 
