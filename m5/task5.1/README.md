@@ -54,7 +54,7 @@ s выводит информацию только для использован
  ![7.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m5/task5.1/7.jpg)
 8. I Listed the contents of the home directory
  ![8.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m5/task5.1/8.jpg)
-
+- ls --help
 
 part2
 1) 2.1.2.jpg
