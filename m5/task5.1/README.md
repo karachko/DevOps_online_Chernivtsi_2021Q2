@@ -86,7 +86,7 @@ s выводит информацию только для использован
 - ubuntu@WIN-LVJOCDBKSR3:/home$ cd ~/reldir
 - ubuntu@WIN-LVJOCDBKSR3:~/reldir$
 
-4. I familiared with the various options for the ls command
+4. I familiarized with the various options for the ls command
 - 2.4.jpg![2.4.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m5/task5.1/2.4.jpg)
 5. I performed the following sequence of operations:
 - mkdir newdir
