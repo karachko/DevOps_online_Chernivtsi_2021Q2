@@ -24,10 +24,10 @@ s выводит информацию только для использован
 
 5.2.  **man** command in Linux is used to display the user manual of any command that we can run on the terminal.
 - w option: This option returns the location in which the manual page of a given command is present.
-    - man -w passwd
+    - Example: man -w passwd
     - /usr/share/man/man1/passwd.1.gz
 - k option: This option searches the given command as a regular expression in all the manuals and it returns the manual pages with the  section number in which it is found.
-    - root@WIN-LVJOCDBKSR3:/etc# man -k passwd
+    - Example: root@WIN-LVJOCDBKSR3:/etc# man -k passwd
     - chgpasswd (8)        - update group passwords in batch mode
     - chpasswd (8)         - update passwords in batch mode
     - gpasswd (1)          - administer /etc/group and /etc/gshadow
@@ -37,58 +37,23 @@ s выводит информацию только для использован
     - passwd (1)           - change user password
  
 5.3.
-The info format is similar to that of man, the traditional Unix manual format. 
--d, --directory=DIR	Add DIR to INFOPATH.
---version	Display version information and exit.
+- The **info** format is similar to that of man, the traditional Unix manual format. 
+- -a, --all                    use all matching manuals
+- Example: info -a passwd 
+-  -k, --apropos=STRING         look up STRING in all indices of all manuals 
+- Example: info -k passwd
 
-5.3.1   info passwd
-PASSWD(1)                                           User Commands                                           PASSWD(1)
-
-NAME
-       passwd - change user password
-
-SYNOPSIS
-       passwd [options] [LOGIN]
-
-DESCRIPTION
-       The passwd command changes passwords for user accounts. A normal user may only change the password for their
-       own account, while the superuser may change the password for any account.  passwd also changes the account or
-       associated password validity period.
-
- 5.3.2 info --version
-info (GNU texinfo) 6.7
-
-Copyright (C) 2019 Free Software Foundation, Inc.
-
-6. 6.1 less --help
-  SUMMARY OF LESS COMMANDS
-
-      Commands marked with * may be preceded by a number, N.
-      Notes in parentheses indicate the behavior if N is given.
-      A key preceded by a caret indicates the Ctrl key; thus ^K is ctrl-K.
-6.2  more --help
-
-Usage:
- more [options] <file>...
-
-A file perusal filter for CRT viewing.
-
-Options:
- -d          display help instead of ringing bell
- -f          count logical rather than screen lines
- -l          suppress pause after form feed
- -c          do not scroll, display text and clean line ends
-
-6.3
-ubuntu@WIN-LVJOCDBKSR3:~$ nano passw.sh
-ubuntu@WIN-LVJOCDBKSR3:~$ chmod +x passw.sh
-ubuntu@WIN-LVJOCDBKSR3:~$ less passw.sh
-
-passwd
-
-passw.sh (END)                                                             
-7. 7.jpg
-8.8.jpg
+6. I explored the more and less commands 
+6.1. less --help
+6.2.  more --help
+6.3.   
+- locate *.bash
+- cat /usr/share/doc/xz-utils/extra/7z2lzma/7z2lzma.bash | less
+                                                            
+7. I Described in plans that you are working on laboratory work 
+ ![7.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/edit/main/m5/task5.1/7.jpg)
+8. I Listed the contents of the home directory
+ ![8.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/edit/main/m5/task5.1/8.jpg)
 
 
 part2
