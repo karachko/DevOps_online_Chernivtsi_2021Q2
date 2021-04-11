@@ -57,85 +57,83 @@ s выводит информацию только для использован
 - ls --help
 
 ## Part2 ##
-1) 2.1.2.jpg
-2) 2.2.jpg
-3)  An absolute path always contains the root element and the complete directory list required to locate the file. For example, /home/sally/statusReport is an absolute path.
-The relative path begins with a dot (period), representing the current directory (also called the "working directory"). The relative path ./public_html/cgi-bin is valid only if the current directory contains a path named public_html which contains a directory named cgi-bin. 
-2.3.jpg
 
-To refer to something two levels up in the directory tree one would use the prefix ../../, and so forth.
-2.3.1.jpg
-To navigate into the root directory, use "cd /"
+1. I examined the **tree** command
+2.1.2.jpg ![2.1.2.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m5/task5.1/2.1.2.jpg)
+2.  I examined command can be used to determine the type of file 2.2.jpg
+![2.2.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m5/task5.1/2.2.jpg)
 
-To navigate to your home directory, use "cd" or "cd ~"
+3.  I examined the navigating the file system using relative and absolute paths.
+-  An absolute path always contains the root element and the complete directory list required to locate the file. For example, /home/sally/statusReport is an absolute path.
+- The relative path begins with a dot (period), representing the current directory (also called the "working directory"). The relative path ./public_html/cgi-bin is valid only if the current directory contains a path named public_html which contains a directory named cgi-bin.
+- ![2.3.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m5/task5.1/2.3.jpg)
+- 2.3.jpg
 
-To navigate up one directory level, use "cd .."
+- To refer to something two levels up in the directory tree one would use the prefix ../../, and so forth.
+- 2.3.1.jpg
+- ![2.3.1.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m5/task5.1/2.3.1.jpg)
+- To navigate into the root directory, use "cd /"
 
-To navigate to the previous directory (or back), use "cd -"
+- To navigate to your home directory, use "cd" or "cd ~"
 
-To navigate through multiple levels of directory at once, specify the full directory path that you want to go to. For example, use, "cd /var/www" to go directly to the /www subdirectory of /var/. As another example, "cd ~/Desktop" will move you to the Desktop subdirectory inside your home directory.
-Example
-ubuntu@WIN-LVJOCDBKSR3:~/reldir$ cd /home
-ubuntu@WIN-LVJOCDBKSR3:/home$ cd ~/reldir
-ubuntu@WIN-LVJOCDBKSR3:~/reldir$
+- To navigate up one directory level, use "cd .."
 
-4)2.4.jpg
-5)
--  mkdir newdir
-cd newdir
+- To navigate to the previous directory (or back), use "cd -"
+
+- To navigate through multiple levels of directory at once, specify the full directory path that you want to go to. For example, use, "cd /var/www" to go directly to the /www subdirectory of /var/. As another example, "cd ~/Desktop" will move you to the Desktop subdirectory inside your home directory.
+- Example
+- ubuntu@WIN-LVJOCDBKSR3:~/reldir$ cd /home
+- ubuntu@WIN-LVJOCDBKSR3:/home$ cd ~/reldir
+- ubuntu@WIN-LVJOCDBKSR3:~/reldir$
+
+4. I familiared with the various options for the ls command
+- 2.4.jpg![2.4.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m5/task5.1/2.4.jpg)
+5. I performed the following sequence of operations:
+- mkdir newdir
+- cd newdir
 -  ls -a >> infofile
-
-
 - ubuntu@WIN-LVJOCDBKSR3:~/newdir$ cat infofile
-.
-..
-infofile
--     -   ubuntu@WIN-LVJOCDBKSR3:~/newdir$ cp infofile ../
-ubuntu@WIN-LVJOCDBKSR3:~/newdir$ cd ../
-ubuntu@WIN-LVJOCDBKSR3:~$ ls
-1.txt  2  2.txt  infofile  newdir  passw.sh  reldir  user.conf
-ubuntu@WIN-LVJOCDBKSR3:~$
-      -     cp /home/ubuntu/newdir/infofile /home/ubuntu
+- .
+- ..
+-infofile
+-  ubuntu@WIN-LVJOCDBKSR3:~/newdir$ cp infofile ../
+- ubuntu@WIN-LVJOCDBKSR3:~/newdir$ cd ../
+- ubuntu@WIN-LVJOCDBKSR3:~$ ls
+- 1.txt  2  2.txt  infofile  newdir  passw.sh  reldir  user.conf
+- ubuntu@WIN-LVJOCDBKSR3:~$
+- cp /home/ubuntu/newdir/infofile /home/ubuntu
 - rm -R newdir
 -  rm infofle
 
-6. 
+6. I performed the following sequence of operations:
 -  mkdir test
-Это файл в котором хранится история вводимых команд
+- .bash_history- Это файл в котором хранится история вводимых команд
 Находится в домашней папке пользователя
 - cp .bash_history ./test
-  ls -la
-total 4
-drwxrwxrwx 1 ubuntu ubuntu  512 Apr  9 13:20 .
-drwxr-xr-x 1 ubuntu ubuntu  512 Apr  9 13:08 ..
--rw------- 1 ubuntu ubuntu 3390 Apr  9 13:20 .bash_history
+- ls -la
+- mv .bash_history labwork2
+- I created hard link
+    - ln labwork2 lnlab2
+    - ubuntu@WIN-LVJOCDBKSR3:~/test$ ls -l
+    - total 8
+    - -rw------- 2 ubuntu ubuntu 3390 Apr  9 13:20 labwork2
+    - -rw------- 2 ubuntu ubuntu 3390 Apr  9 13:20 lnlab2
+- I created soft link
+    - ubuntu@WIN-LVJOCDBKSR3:~/test$ ln -s labwork2 lnlabsoft2
+    - ubuntu@WIN-LVJOCDBKSR3:~/test$ ls -l
+    - total 8
+    - rw------- 2 ubuntu ubuntu 3390 Apr  9 13:20 labwork2
+    - rw------- 2 ubuntu ubuntu 3390 Apr  9 13:20 lnlab2
+    - lrwxrwxrwx 1 ubuntu ubuntu    8 Apr  9 13:30 lnlabsoft2 -> labwork2
 
- mv .bash_history labwork2
--create hard link
-ln labwork2 lnlab2
-ubuntu@WIN-LVJOCDBKSR3:~/test$ ls -l
-total 8
--rw------- 2 ubuntu ubuntu 3390 Apr  9 13:20 labwork2
--rw------- 2 ubuntu ubuntu 3390 Apr  9 13:20 lnlab2
-- create soft link
-   ubuntu@WIN-LVJOCDBKSR3:~/test$ ln -s labwork2 lnlabsoft2
-ubuntu@WIN-LVJOCDBKSR3:~/test$ ls -l
-total 8
--rw------- 2 ubuntu ubuntu 3390 Apr  9 13:20 labwork2
--rw------- 2 ubuntu ubuntu 3390 Apr  9 13:20 lnlab2
-lrwxrwxrwx 1 ubuntu ubuntu    8 Apr  9 13:30 lnlabsoft2 -> labwork2
-
--A soft link is similar to the file shortcut feature which is used in Windows Operating systems.
-Each hard linked file is assigned the same Inode value as the original, therefore they reference the same physical file location.
-
-
+- A soft link is similar to the file shortcut feature which is used in Windows Operating systems.
+- Each hard linked file is assigned the same Inode value as the original, therefore they reference the same physical file location.
 -  nano lnlabsoft2
-  write help
-
+   I wrote  help
 - mv labwork2 hard_lnk_labwork2
-  mv lnlabsoft2 symb_lnk_labwork2
- rm labwork2
-rm: cannot remove 'labwork2': No such file or directory
+- mv lnlabsoft2 symb_lnk_labwork2
+- rm labwork2
+- rm: cannot remove 'labwork2': No such file or directory
 
 7.
 2.7.jpg
