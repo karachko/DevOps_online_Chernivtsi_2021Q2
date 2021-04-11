@@ -1,5 +1,5 @@
 # TASK 5.1 #
- 
+ ## Part1 ##
 1. I loged in to the system as root (su root)
 2. I changed the password  by using the command (passwd username)
 - The file /etc/passwd contained the information about users
@@ -56,7 +56,7 @@ s выводит информацию только для использован
  ![8.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m5/task5.1/8.jpg)
 - ls --help
 
-part2
+## Part2 ##
 1) 2.1.2.jpg
 2) 2.2.jpg
 3)  An absolute path always contains the root element and the complete directory list required to locate the file. For example, /home/sally/statusReport is an absolute path.
