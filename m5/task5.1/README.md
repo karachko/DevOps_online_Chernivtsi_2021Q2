@@ -10,10 +10,10 @@
 - -h, --help (to display help)
 - -l, --lock(to lock an user)
 - -S, --status(to display a status of user)
-
-4)usermod -c "YOUR NAME" username
-5)   5.1help 
-	
+3. I determined the users registered in the system by using the command (cat /etc/passwd)
+4. I changed the personal information by using the command (usermod -c "YOUR NAME" username)
+5. I familiared with the Linux help system and the man and info commands 
+5.1 ** help **
 5.1.1 passwd --help
 Usage: passwd [options] [LOGIN]
 
@@ -23,6 +23,9 @@ Options:
   -e, --expire                  force expire the password for the named account
   -h, --help                    display this help message and exit
   -k, --keep-tokens             change password only if expired
+  
+  
+
  
 5.1.2.passwd -d --help
 Usage: passwd [options] [LOGIN]
