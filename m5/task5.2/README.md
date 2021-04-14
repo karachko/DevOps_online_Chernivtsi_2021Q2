@@ -42,13 +42,13 @@ group_name: It is the name of group. If you run ls -l command, you will see this
 - User ID (UID): Each user must be assigned a user ID (UID). UID 0 (zero) is reserved for root and UIDs 1-99 are reserved for other predefined accounts. Further UID 100-999 are reserved by system for administrative and system accounts/groups.
 -Example
 - cat /etc/passwd
-- root:x:0(the third value 0 is the user ID)
-- bin:x:2 (the third value 2 is the user ID)  
+- ```root:x:0(the third value 0 is the user ID)```
+- ```bin:x:2 (the third value 2 is the user ID) ``` 
 3. I learnt GID
 - Group ID (GID): The primary group ID (stored in /etc/group file)
 - cat /etc/passwd
-- root:x:0:0(the fouth value 0 is a group ID)
-- bin:x:2:2 (the fouth value 2 is a group ID)  
+- ```root:x:0:0(the fouth value 0 is a group ID)```
+- ```bin:x:2:2 (the fouth value 2 is a group ID)```  
 4. I determined belonging of user to the specific group
 - How do I find a specific user’s GID?
 - id -g ubuntu
