@@ -187,5 +187,5 @@ Port 2025 #Change me
 - ![2.4.3.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m5/task5.3/2.4.3.jpg)
 5.  I captured traffic with tcpdump
 - ![2.5.1.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m5/task5.3/2.5.1.jpg)
-- and connected to the VM "Centos"
+
 - ![2.5.2.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m5/task5.3/2.5.2.jpg)
