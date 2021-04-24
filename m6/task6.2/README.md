@@ -52,23 +52,23 @@ VM2, VM3 – internal only interfaces
         - (4.1.jpg) - ![4.1.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m6/task6.2/4.1.jpg)
          - On the VM "v3_karachko"- I executed ip a. The VM2 get the ip 10.10.10.11
         - (4.2.jpg) - ![4.2.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m6/task6.2/4.2.jpg)
-    4.2 I confugured dnsmasq DNS server
-         - I wrote  (nameserver 10.10.10.1, nameserver 127.0.0.1, nameserver 8.8.8.8) in the file /etc/resolv.conf
-         - I wrote  (port=53) in the file /etc/dnsmasq.conf
-         - I wrote  (domain-needed) in the file /etc/dnsmasq.conf
-         - I wrote  (bogus-priv) in the file /etc/dnsmasq.conf
-         - I wrote  (listen-address=127.0.0.1,10.10.10.1) in the file /etc/dnsmasq.conf
-         - I wrote  (expand-hosts) in the file /etc/dnsmasq.conf
-         - I wrote  (domain=kifarunix-demo.com) in the file /etc/dnsmasq.conf
-         - I wrote  (cache-size=1000) in the file /etc/dnsmasq.conf    
-         - I wrote  (10.10.10.1  kifarunix-demo.com) in the file /etc/hosts
-         - I wrote  (10.10.10.11) in the file /etc/hosts
-         - I executed (dnsmasq --test) in CLI. The answer was "dnsmasq: syntax check OK."
-         - I executed (netstat -alnp | grep -i :53) in CLI.
-         - I opened the port 53 (sudo ufw allow from 10.10.10.0/24 to any port 53 proto udp)
-         - On the VM "v3_karachko"- I executed (ping kifarunix-demo.com) and  (nslookup kifarunix-demo.com)      
-         - (4.2.2.jpg) - ![4.2.2.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m6/task6.2/4.2.2.jpg)
-         - On the VM "v2_karachko"- I executed (ping kifarunix-demo.com) and  (nslookup kifarunix-demo.com)      
-         - (4.2.3.jpg) - ![4.2.3.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m6/task6.2/4.2.3.jpg)
-https://infoit.com.ua/linux/ubuntu/nastrojka-lokalnyx-dns-server-s-pomoshhyu-dnsmasq-v-ubuntu-20-04/
-https://www.alibabacloud.com/blog/how-to-setup-dns-server-using-bind9-on-ubuntu-16-04_594469
+4.2 I confugured dnsmasq DNS server
+- I wrote  (nameserver 10.10.10.1, nameserver 127.0.0.1, nameserver 8.8.8.8) in the file /etc/resolv.conf
+- I wrote  (port=53) in the file /etc/dnsmasq.conf
+- I wrote  (domain-needed) in the file /etc/dnsmasq.conf
+- I wrote  (bogus-priv) in the file /etc/dnsmasq.conf
+- I wrote  (listen-address=127.0.0.1,10.10.10.1) in the file /etc/dnsmasq.conf
+- I wrote  (expand-hosts) in the file /etc/dnsmasq.conf
+- I wrote  (domain=kifarunix-demo.com) in the file /etc/dnsmasq.conf
+- I wrote  (cache-size=1000) in the file /etc/dnsmasq.conf    
+- I wrote  (10.10.10.1  kifarunix-demo.com) in the file /etc/hosts
+- I wrote  (10.10.10.11) in the file /etc/hosts
+- I executed (dnsmasq --test) in CLI. The answer was "dnsmasq: syntax check OK."
+- I executed (netstat -alnp | grep -i :53) in CLI.
+- I opened the port 53 (sudo ufw allow from 10.10.10.0/24 to any port 53 proto udp)
+- On the VM "v3_karachko"- I executed (ping kifarunix-demo.com) and  (nslookup kifarunix-demo.com)      
+- (4.2.2.jpg) - ![4.2.2.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m6/task6.2/4.2.2.jpg)
+- On the VM "v2_karachko"- I executed (ping kifarunix-demo.com) and  (nslookup kifarunix-demo.com)      
+- (4.2.3.jpg) - ![4.2.3.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m6/task6.2/4.2.3.jpg)
+- https://infoit.com.ua/linux/ubuntu/nastrojka-lokalnyx-dns-server-s-pomoshhyu-dnsmasq-v-ubuntu-20-04/
+- https://www.alibabacloud.com/blog/how-to-setup-dns-server-using-bind9-on-ubuntu-16-04_594469
