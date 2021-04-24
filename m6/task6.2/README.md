@@ -1,7 +1,7 @@
 1. I used already created internal-network for three VMs (VM1-VM3). VM1 has NAT and internal,
 VM2, VM3 – internal only interfaces
 2. I installed and configured DHCP server on VM1. 
-2.1 I installed isc-dhcp-server
+2.1. I installed isc-dhcp-server
     - sudo apt-get update
     - sudo apt-get upgrade -y 
     - sudo apt-get install isc-dhcp-server
@@ -35,8 +35,8 @@ VM2, VM3 – internal only interfaces
  - I executed ip a. The VM3 get the ip 10.10.10.11
  - (7.jpg)  - ![7.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m6/task6.2/7.jpg)
 
-4. I installed and configured DHCP dnsmasq server on VM1. 
-4.1 I installed dnsmasq DHCP server
+4.
+4.1. I installed dnsmasq DHCP server
 - sudo systemctl stop systemd-resolved
 - sudo apt-get update
 - sudo apt-get install  dnsmasq
@@ -49,7 +49,7 @@ VM2, VM3 – internal only interfaces
 - (4.1.jpg) - ![4.1.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m6/task6.2/4.1.jpg)
 - On the VM "v3_karachko"- I executed ip a. The VM2 get the ip 10.10.10.11
 - (4.2.jpg) - ![4.2.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m6/task6.2/4.2.jpg)
-4.2 I confugured dnsmasq DNS server
+4.2. I confugured dnsmasq DNS server
 - I wrote  (nameserver 10.10.10.1, nameserver 127.0.0.1, nameserver 8.8.8.8) in the file /etc/resolv.conf
 - I wrote  (port=53) in the file /etc/dnsmasq.conf
 - I wrote  (domain-needed) in the file /etc/dnsmasq.conf
