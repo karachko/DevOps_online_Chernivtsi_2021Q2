@@ -35,23 +35,20 @@ VM2, VM3 – internal only interfaces
  - I executed ip a. The VM3 get the ip 10.10.10.11
  - (7.jpg)  - ![7.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m6/task6.2/7.jpg)
 
-4. I installed and configured DNS server on VM1. 
-
-
 4. I installed and configured DHCP dnsmasq server on VM1. 
-    4.1 I installed dnsmasq DHCP server
-        - sudo systemctl stop systemd-resolved
-        - sudo apt-get update
-        - sudo apt-get install  dnsmasq
-        - I executed systemctl status  dnsmasq
-        - I wrote  (interface=enp0s8) in the file /etc/dnsmasq.conf
-        - I wrote (dhcp-range=10.10.10.10,10.10.10.20,12h) in the file /etc/dnsmasq.conf
-        - I wrote (nameserver 127.0.0.1) in the file /etc/resolv.conf
-        - I wrote (prepend domain-name-servers 127.0.0.1;) in the file /etc/dhcp/dhclient.conf
-        - On the VM "v2_karachko"- I executed ip a. The VM2 get the ip 10.10.10.10
-        - (4.1.jpg) - ![4.1.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m6/task6.2/4.1.jpg)
-         - On the VM "v3_karachko"- I executed ip a. The VM2 get the ip 10.10.10.11
-        - (4.2.jpg) - ![4.2.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m6/task6.2/4.2.jpg)
+4.1 I installed dnsmasq DHCP server
+- sudo systemctl stop systemd-resolved
+- sudo apt-get update
+- sudo apt-get install  dnsmasq
+- I executed systemctl status  dnsmasq
+- I wrote  (interface=enp0s8) in the file /etc/dnsmasq.conf
+- I wrote (dhcp-range=10.10.10.10,10.10.10.20,12h) in the file /etc/dnsmasq.conf
+- I wrote (nameserver 127.0.0.1) in the file /etc/resolv.conf
+- I wrote (prepend domain-name-servers 127.0.0.1;) in the file /etc/dhcp/dhclient.conf
+- On the VM "v2_karachko"- I executed ip a. The VM2 get the ip 10.10.10.10
+- (4.1.jpg) - ![4.1.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m6/task6.2/4.1.jpg)
+- On the VM "v3_karachko"- I executed ip a. The VM2 get the ip 10.10.10.11
+- (4.2.jpg) - ![4.2.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m6/task6.2/4.2.jpg)
 4.2 I confugured dnsmasq DNS server
 - I wrote  (nameserver 10.10.10.1, nameserver 127.0.0.1, nameserver 8.8.8.8) in the file /etc/resolv.conf
 - I wrote  (port=53) in the file /etc/dnsmasq.conf
