@@ -3,38 +3,39 @@ VM2, VM3 – internal only interfaces
 2. I installed and configured DHCP server on VM1. 
 
 2.1. I installed isc-dhcp-server
-    - sudo apt-get update
-    - sudo apt-get upgrade -y 
-    - sudo apt-get install isc-dhcp-server
-    - On the VM "v1_karachko" i ecexuted command
-    - cd /etc/netplan
-    - sudo nano 01-network-manager-all.yaml
-    - (1.jpg) - ![1.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m6/task6.2/1.jpg) 
-    - sudo netplan apply 
-    - (1.1.jpg) - ![1.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m6/task6.2/1.1.jpg) 
-    - sudo nano /etc/default/isc-dhcp-server
-    - I wrote in the isc-dhcp-server (INTERFACESv4="enp0s8")
-    - sudo nano /etc/dhcp/dhcpd.conf
-    - I commented the strings default-lease-time and max-lease-time
-    - I wrote in the dhcpd.conf the following lines
-    - (3.jpg) - ![3.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m6/task6.2/3.jpg) 
-    - I executed systemctl restart isc-dhcp-server.service
-    - I executed systemctl status isc-dhcp-server.service
-    - (4.jpg)  - ![4.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m6/task6.2/4.jpg) 
-3.        - On the VM "v2_karachko" i ecexuted command
- - cd /etc/netplan
- - sudo nano 01-network-manager-all.yaml
- - (2.jpg)  - ![2.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m6/task6.2/2.jpg)
- - sudo netplan apply 
- - I executed ip a. The VM2 get the ip 10.10.10.10
+- sudo apt-get update
+- sudo apt-get upgrade -y 
+- sudo apt-get install isc-dhcp-server
+- On the VM "v1_karachko" i ecexuted command
+- cd /etc/netplan
+- sudo nano 01-network-manager-all.yaml
+- (1.jpg) - ![1.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m6/task6.2/1.jpg) 
+- sudo netplan apply 
+- (1.1.jpg) - ![1.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m6/task6.2/1.1.jpg) 
+- sudo nano /etc/default/isc-dhcp-server
+- I wrote in the isc-dhcp-server (INTERFACESv4="enp0s8")
+- sudo nano /etc/dhcp/dhcpd.conf
+- I commented the strings default-lease-time and max-lease-time
+- I wrote in the dhcpd.conf the following lines
+- (3.jpg) - ![3.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m6/task6.2/3.jpg) 
+- I executed systemctl restart isc-dhcp-server.service
+- I executed systemctl status isc-dhcp-server.service
+- (4.jpg)  - ![4.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m6/task6.2/4.jpg) 
+3.        
+- On the VM "v2_karachko" i ecexuted command
+- cd /etc/netplan
+- sudo nano 01-network-manager-all.yaml
+- (2.jpg)  - ![2.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m6/task6.2/2.jpg)
+- sudo netplan apply 
+- I executed ip a. The VM2 get the ip 10.10.10.10
  - (5.jpg)  - ![5.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m6/task6.2/5.jpg)
- - On the VM "v3_karachko" i ecexuted command
- - cd /etc/netplan
- - sudo nano 01-network-manager-all.yaml
- - (6.jpg)  - ![6.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m6/task6.2/6.jpg)
- - sudo netplan apply 
- - I executed ip a. The VM3 get the ip 10.10.10.11
- - (7.jpg)  - ![7.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m6/task6.2/7.jpg)
+- On the VM "v3_karachko" i ecexuted command
+- cd /etc/netplan
+- sudo nano 01-network-manager-all.yaml
+- (6.jpg)  - ![6.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m6/task6.2/6.jpg)
+- sudo netplan apply 
+- I executed ip a. The VM3 get the ip 10.10.10.11
+- (7.jpg)  - ![7.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m6/task6.2/7.jpg)
 
 4.
 
