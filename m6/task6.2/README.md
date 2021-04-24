@@ -1,25 +1,25 @@
 1. I used already created internal-network for three VMs (VM1-VM3). VM1 has NAT and internal,
 VM2, VM3 – internal only interfaces
 2. I installed and configured DHCP server on VM1. 
-    2.1 I installed isc-dhcp-server
-        - sudo apt-get update
-        - sudo apt-get upgrade -y 
-        - sudo apt-get install isc-dhcp-server
-        - On the VM "v1_karachko" i ecexuted command
-            - cd /etc/netplan
-            - sudo nano 01-network-manager-all.yaml
-            - (1.jpg) - ![1.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m6/task6.2/1.jpg) 
-            - sudo netplan apply 
-            - (1.1.jpg) - ![1.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m6/task6.2/1.1.jpg) 
-            - sudo nano /etc/default/isc-dhcp-server
-            - I wrote in the isc-dhcp-server (INTERFACESv4="enp0s8")
-            - sudo nano /etc/dhcp/dhcpd.conf
-            - I commented the strings default-lease-time and max-lease-time
-            - I wrote in the dhcpd.conf the following lines
-            - (3.jpg) - ![3.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m6/task6.2/3.jpg) 
-            - I executed systemctl restart isc-dhcp-server.service
-            - I executed systemctl status isc-dhcp-server.service
-            - (4.jpg)  - ![4.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m6/task6.2/4.jpg) 
+2.1 I installed isc-dhcp-server
+    - sudo apt-get update
+    - sudo apt-get upgrade -y 
+    - sudo apt-get install isc-dhcp-server
+    - On the VM "v1_karachko" i ecexuted command
+    - cd /etc/netplan
+    - sudo nano 01-network-manager-all.yaml
+    - (1.jpg) - ![1.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m6/task6.2/1.jpg) 
+    - sudo netplan apply 
+    - (1.1.jpg) - ![1.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m6/task6.2/1.1.jpg) 
+    - sudo nano /etc/default/isc-dhcp-server
+    - I wrote in the isc-dhcp-server (INTERFACESv4="enp0s8")
+    - sudo nano /etc/dhcp/dhcpd.conf
+    - I commented the strings default-lease-time and max-lease-time
+    - I wrote in the dhcpd.conf the following lines
+    - (3.jpg) - ![3.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m6/task6.2/3.jpg) 
+    - I executed systemctl restart isc-dhcp-server.service
+    - I executed systemctl status isc-dhcp-server.service
+    - (4.jpg)  - ![4.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m6/task6.2/4.jpg) 
 3.        - On the VM "v2_karachko" i ecexuted command
  - cd /etc/netplan
  - sudo nano 01-network-manager-all.yaml
