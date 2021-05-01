@@ -1,29 +1,4 @@
 
-1)https://miloserdov.org/?p=4945
-2) in cmd
-wsl --shutdown
-netsh winsock reset
-netsh int ip reset all
-netsh winhttp reset proxy
-ipconfig /flushdns
-netsh winsock reset
-shutdown /r 
-3) in cmd wsl 
-
-ifconfig
-
-sudo netstat -tulpn | grep LISTEN
-Where,
-
--t : All TCP ports
--u : All UDP ports
--l : Display listening server sockets
--p : Show the PID and name of the program to which each socket belongs
--n : Don’t resolve names
-| grep LISTEN : Only display open ports by applying grep command filter.
-
-
-
 # TASK7.1 #
 
 A. 
