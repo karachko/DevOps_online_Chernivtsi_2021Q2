@@ -101,7 +101,38 @@ awk '/'$patern'/{print $7,$15}' $1 | sort | uniq -c
 - (74b.jpg) - ![74b.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m7/task7.1/74b.jpg)
 
 B5.
+- What time did site get the most requests?
+-touch output7
+- chmod 777 output7
+-touch output8
+- chmod 777 output8
+-touch output9
+- chmod 777 output9
+- 75bb.sh
 
+```
+#!/bin/bash
+
+file_out=output7
+
+awk '{print $4}' $1 > $file_out
+
+awk '{split($1, a, ":"); print a[2]}' output7 > output8
+
+file_out1=out_output9
+awk '{print $1}' output8 | sort | uniq -c | sort -gr > $file_out1
+{
+read line1
+} <$file_out1
+echo Kol_hour
+echo $line1
+```
+- ./75bb1.1.sh apache_logs.txt
+- (75bb1.1.jpg) - ![75bb1.1.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m7/task7.1/75bb1.1.jpg)
+- ./75bb1.2.sh apache_logs.txt
+- (75bb1.2.jpg) - ![75bb1.2.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m7/task7.1/75bb1.2.jpg)
+- 
+B52.
 - What time did site get the most requests?
 - I found in apache_logs.txt the ip, were the most requests. I asigned thi IP to variable $file_out3 and outputed from apache_logs.txt this IP and date, time.
 
