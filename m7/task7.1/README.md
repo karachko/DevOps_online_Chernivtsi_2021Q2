@@ -100,7 +100,7 @@ awk ' $9!=200 {print $7,$15}' $1 | sort | uniq -c | sort -gr
 - (74b2.jpg)
 - (74b2.jpg) - ![74b.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m7/task7.1/74b2.jpg)
 
-- B42.
+B42.
 -74b.sh
 ```
 #!/bin/bash
