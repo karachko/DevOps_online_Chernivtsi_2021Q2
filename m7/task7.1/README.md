@@ -169,14 +169,14 @@ awk -v c=$file_out3 '($1 == c) {print $1,$4}' apache_logs.txt
                                                               
 B6.
 - What search bots have accessed the site? 
-- touch out_script3
-- chmod 777 out_script3
+
 -76b.sh
 ``` 
 #!/bin/bash
 file_out=out_script3
-awk '{print $1,$14}' $1 | sort > $file_out
+awk '/(bot|Bot)/{print $14}' $1 | sort | uniq -c | sort -gr | egrep -i bot
+
 ```
-- ./76b.sh apache_logs.txt
--(76b.jpg)
-- (76b.jpg) - ![76b.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m7/task7.1/76b.jpg)
+- ./76b1.sh apache_logs.txt
+-(76b1.jpg)
+- (76b1.jpg) - ![76b1.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m7/task7.1/76b1.jpg)
