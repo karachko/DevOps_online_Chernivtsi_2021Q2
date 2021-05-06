@@ -89,7 +89,17 @@ grep -E -o "([0-9]{1,3}[\.]){3}[0-9]{1,3}" $1 | sort | uniq -c | sort -gr
 -  (73b.jpg) - ![73b.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m7/task7.1/73b.jpg)
 
 B4.
--What non-existent pages were clients referred to? 
+- What non-existent pages were clients referred to? 
+-74b2.sh
+```
+#!/bin/bash
+
+awk ' $9!=200 {print $7,$15}' $1 | sort | uniq -c | sort -gr
+```
+- ./74b2.sh apache_logs.txt
+- (74b2.jpg)
+- (74b2.jpg) - ![74b.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m7/task7.1/74b2.jpg)
+B42.
 -74b.sh
 ```
 #!/bin/bash
