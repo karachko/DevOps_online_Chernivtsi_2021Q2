@@ -50,4 +50,4 @@ if __name__ == '__main__':
 - In the **PyCharm** in the terminal I run the command - python fizz_buzz_tests.py -v
 
 -  (9.1.jpg) 
--  - ![9.1.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m7/task7.1/9.1.jpg)
+-  - ![9.1.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/tree/main/m9/task9.1/9.1.jpg)
