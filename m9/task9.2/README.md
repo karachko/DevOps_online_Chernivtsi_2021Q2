@@ -61,3 +61,15 @@ self.assertEqual(calc.sum(123456789123456789, 123456789123456789), 2469135782469
 
 -  (9.3.jpg) 
 -  ![9.3.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m9/task9.2/9.3.jpg)
+
+- I added the code to the calculatortest.py
+- 
+```
+ def test_sum2(self):
+ self.assertEqual(calc.sum(1, 'a'), 1)
+```
+- In the **PyCharm** in the terminal I ran the command - python calculatortest.py -v
+
+-  (9.4.jpg) 
+-  ![9.4.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m9/task9.2/9.4.jpg)
+
