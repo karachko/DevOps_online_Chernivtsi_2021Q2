@@ -50,3 +50,14 @@ if __name__ == '__main__':
 
 -  (9.2.jpg) 
 -  ![9.2.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m9/task9.2/9.2.jpg)
+
+- I added the code to the calculatortest.py
+- 
+```
+def test_sum1(self):
+self.assertEqual(calc.sum(123456789123456789, 123456789123456789), 246913578246913578)
+```
+- In the **PyCharm** in the terminal I ran the command - python calculatortest.py -v
+
+-  (9.3.jpg) 
+-  ![9.3.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m9/task9.2/9.3.jpg)
