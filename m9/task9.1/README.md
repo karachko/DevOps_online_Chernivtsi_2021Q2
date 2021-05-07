@@ -47,5 +47,7 @@ class FizzBuzzTests(unittest.TestCase):
 if __name__ == '__main__':
 	unittest.main()
 ```
+- In the **PyCharm** in the terminal I run the command - python fizz_buzz_tests.py -v
 
--  (71b.jpg) - ![71b.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m7/task7.1/71b.jpg)
+-  (9.1.jpg) 
+-  - ![9.1.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m7/task7.1/9.1.jpg)
