@@ -326,8 +326,7 @@ pipeline {
 - I selected (Use Groovy Sandbox)
 - I pushed Save
 - I pushed (Build now)
-(pipeline1.jpg)
-- ![pipeline1.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m8/task8/pipeline1.jpg)
+
 
 ## Part6 ##
 - **Maven with Jenkins**
