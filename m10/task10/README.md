@@ -59,7 +59,7 @@ linux1 ansible_host=52.54.144.164 ansible_user=ubuntu ansible_ssh_private_key_f$
 ```
 - ansible -i hosts.txt all  -m ping
 (pingsuccess.jpg)
--  [!pingsuccess.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m10/task10/pingsuccess.jpg)
+-  ![pingsuccess.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m10/task10/pingsuccess.jpg)
 
 8. I installed EC2-AnsibleClient2
 - I selected EC2 from All services on AWS
