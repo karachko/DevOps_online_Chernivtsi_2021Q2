@@ -226,6 +226,8 @@ Assumed, that you have credentials to do this action
 - ansible-playbook playbook1.yml
 
 - (playbook1.jpg)
+-  ![playbook1.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m10/task10/playbook1.jpg)
+
 
 2. Task: Install Apache Web Server on all servers, owned by your organization.
 Also needed to start Apache Web Server and enable it during boot
@@ -249,6 +251,8 @@ Also needed to start Apache Web Server and enable it during boot
 - ansible-playbook playbook2.yml
 
 - (playbook2.jpg)
+-  ![playbook2.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m10/task10/playbook2.jpg)
+
 
 3a. Task: Install Apache Web Server on all servers, owned by your organization.
 Also needed to start Apache Web Server and enable it during boot.
@@ -293,6 +297,8 @@ Hello world of DevOps!
 - ansible-playbook playbook3a.yml
 
 - (playbook3a.jpg)
+-  ![playbook3a.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m10/task10/playbook3a.jpg)
+
 
 3b.
 
@@ -329,8 +335,11 @@ Hello world of DevOps!
 - ansible-playbook playbook3b.yml
 
 - (playbook3b.jpg)
-
+-  ![playbook3b.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m10/task10/playbook3b.jpg)
+-  
 - ansible all -m yum -a "name=httpd state=removed" -b
+
+
 
 3c. Task: Install Apache Web Server on all servers, owned by your organization.
 Also needed to start Apache Web Server and enable it during boot.
@@ -383,6 +392,8 @@ Also needed to change default index.html. Servers are on different Linux-based O
 - ansible-playbook playbook3c.yml
 
 - (playbook3c.jpg)
+-  ![playbook3c.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m10/task10/playbook3c.jpg)
+
 
 5. Task: Install Apache Web Server on all servers, owned by your organization.
 Also needed to start Apache Web Server and enable it during boot.
@@ -390,7 +401,6 @@ Also needed to change default index.html. Servers are on different Linux-based O
 - playbook5.yml
 -
 ```
----
 ---
 - name: Install Apache Web Server on AMI Linux. Upload web page example
   hosts: all
@@ -449,10 +459,13 @@ Also needed to change default index.html. Servers are on different Linux-based O
 - ansible-playbook playbook5.yml
 
 - (playbook5.jpg)
+-  ![playbook5.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m10/task10/playbook5.jpg)
+
 6. Task: Customize WebPage on remote servers using
 template and jinja
 
--index.j2
+- index.j2
+
 ```
 <html>
 <header><title>Be smart</title></header>
@@ -526,3 +539,4 @@ Hello world of DevOps!
 ```
 - ansible-playbook playbook6.yml
 - (playbook6.jpg)
+-  ![playbook6.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m10/task10/playbook6.jpg)
