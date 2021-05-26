@@ -18,7 +18,7 @@ I selected EC2 from All services on AWS
 - I copied the AnsibleClient1.pem from local machine to EC2-AnsibleMaster,using Moba Xterm, in the folder /home/ubuntu/.ssh
 
 3.I installed EC2-AnsibleClient1
-I selected EC2 from All services on AWS
+- I selected EC2 from All services on AWS
 - I selected Ubuntu Server 18.04 LTS
 - I chose Instant Type t2.micro
 - I pressed the button Next
@@ -59,9 +59,10 @@ linux1 ansible_host=52.54.144.164 ansible_user=ubuntu ansible_ssh_private_key_f$
 ```
 - ansible -i hosts.txt all  -m ping
 (pingsuccess.jpg)
+-  [!pingsuccess.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m10/task10/pingsuccess.jpg)
 
 8. I installed EC2-AnsibleClient2
-I selected EC2 from All services on AWS
+- I selected EC2 from All services on AWS
 - I selected Amazon Linux 2 AMI (HVM)- Free tier eligible
 - I chose Instant Type t2.micro
 - I pressed the button Next
@@ -78,9 +79,9 @@ I selected EC2 from All services on AWS
 - sudo chmod 400 /home/ubuntu/.ssh/AnsibleClient2key.pem
 - ssh -i /home/ubuntu/.ssh/AnsibleClient2key.pem ec2-user@34.227.61.238
 9.
-On the EC2-AnsibleMaster
+- On the EC2-AnsibleMaster
 - nano hosts.txt
-
+-
 ```
 [staging_servers]
 linux1 ansible_host=52.54.144.164 ansible_user=ubuntu
@@ -90,10 +91,11 @@ linux2 ansible_host=34.227.61.238 ansible_user=ec2-user
 ansible_ssh_private_key_file=/home/ubuntu/.ssh/AnsibleClient2key.pem
 
 ```
-
+-
 - ansible -i hosts.txt all  -m ping
 (pingsuccess1.jpg)
 
+-  !pingsuccess.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m10/task10/pingsuccess.jpg)
 10. On the EC2-AnsibleMaster
 - nano ansible.cfg
 
