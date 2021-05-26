@@ -53,12 +53,13 @@ I selected EC2 from All services on AWS
 - mkdir ansible
 - cd ansible
 - nano hosts.txt
+- 
 ```
 [staging_servers]
 linux1 ansible_host=52.54.144.164 ansible_user=ubuntu ansible_ssh_private_key_f$
 ```
 - ansible -i hosts.txt all  -m ping
-(pingsuccess.jpg)
+- (pingsuccess.jpg)
 -  ![pingsuccess.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m10/task10/pingsuccess.jpg)
 
 8. I installed EC2-AnsibleClient2
@@ -93,12 +94,12 @@ ansible_ssh_private_key_file=/home/ubuntu/.ssh/AnsibleClient2key.pem
 ```
 -
 - ansible -i hosts.txt all  -m ping
-(pingsuccess1.jpg)
+- (pingsuccess1.jpg)
+-  ![pingsuccess1.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m10/task10/pingsuccess1.jpg)
 
--  !pingsuccess.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m10/task10/pingsuccess.jpg)
 10. On the EC2-AnsibleMaster
 - nano ansible.cfg
-
+-
 ```
 [defaults]
 host_key_checking = false
@@ -107,7 +108,8 @@ inventory         = ./hosts.txt
 ```
 - ansible all -m ping
 
-(pingsuccess2.jpg)
+- (pingsuccess2.jpg)
+-  ![pingsuccess2.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m10/task10/pingsuccess2.jpg)
 
 11. I installed EC2-AnsibleClient3
 - I selected EC2 from All services on AWS
@@ -129,7 +131,7 @@ inventory         = ./hosts.txt
 
 12. On the EC2-AnsibleMaster
 - nano hosts.txt
-
+-
 ```
 [staging_servers]
 linux1 ansible_host=52.54.144.164 ansible_user=ubuntu
@@ -147,30 +149,32 @@ ansible_ssh_private_key_file=/home/ubuntu/.ssh/AnsibleClient2key.pem
 
 - ansible all -m ping
 - (pingsuccess3.jpg)
-
+-  ![pingsuccess3.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m10/task10/pingsuccess3.jpg)
 13. On the EC2-AnsibleMaster
 - ansible-inventory --list
 - (inventorylist.jpg)
-
+-  ![inventorylist.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m10/task10/inventorylist.jpg)
 - ansible-inventory --graph
 
 - ansible all -m shell -a "uptime"
 - (uptime.jpg)
-
+-  ![uptime.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m10/task10/uptime.jpg)
 - ansible all -m shell -a "ls /home"
 
 - echo HelloWorld! > hello.txt
 -  ansible all -m copy -a "src=hello.txt dest=/home" -b
 - (hello.jpg)
-
+-  ![hello.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m10/task10/hello.jpg)
 - ansible all -m shell -a "ls -la /home"
 - (helloonclients.jpg)
-
+-  ![helloonclients.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m10/task10/helloonclients.jpg)
 - ansible all -m file -a "path=/home/hello.txt state=absent" -b
 - (absenthello.jpg)
+-  ![absenthello.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m10/task10/absenthello.jpg)
+
 
 - nano hosts.txt
-
+- 
 ```
 [staging_servers]
 linux1 ansible_host=52.54.144.164 ansible_user=ubuntu
@@ -192,12 +196,14 @@ production
 ansible_user=ec2-user
 
 ```
-ansible all -m yum -a "name=httpd state=latest" -b
-ansible all -m apt -a "name=apache2 state=latest" -b
+- ansible all -m yum -a "name=httpd state=latest" -b
+- ansible all -m apt -a "name=apache2 state=latest" -b
 - ansible test_prod -m service -a "name=httpd state=started enabled=yes" -b
 - (work1.jpg)
-- (work2.jpg)
+-  ![work1.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m10/task10/work1.jpg)
 
+- (work2.jpg)
+-  ![work2.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m10/task10/work2.jpg)
 - ansible production -m yum -a "name=httpd state=removed" -b
 
 # PART2 #
