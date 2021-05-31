@@ -150,7 +150,7 @@ text-transform: uppercase;
 
 
 
-docker build -t tag1 .
-docker run -d -p 8889:5000 tag1:latest
-http://54.167.2.109:8889/
+- docker build -t tag1 .
+- docker run -d -p 8889:5000 tag1:latest
+- http://54.167.2.109:8889/
 
