@@ -154,3 +154,7 @@ text-transform: uppercase;
 - docker run -d -p 8889:5000 tag1:latest
 - http://54.167.2.109:8889/
 
+- (docker1.jpg)
+-  ![docker1.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m11/task11/docker1.jpg)
+- (cat.jpg)
+-  ![cat.jpg](https://github.com/karachko/DevOps_online_Chernivtsi_2021Q2/blob/main/m11/task11/cat.jpg)
