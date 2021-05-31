@@ -28,14 +28,14 @@
     - sudo mkdir /home/student
     - sudo chown student:student /home/student
 
-I added a user to the “docker” group
--sudo usermod -aG docker student
+- I added a user to the “docker” group
+    - sudo usermod -aG docker student
 
-su - student
-mkdir dockerfiles
-cd dockerfiles
-touch Dockerfile
-nano Dockerfile
+- su - student
+- mkdir dockerfiles
+- cd dockerfiles
+- touch Dockerfile
+- nano Dockerfile
 
 ```
 FROM ubuntu:16.04
@@ -46,19 +46,19 @@ RUN echo 'It is just a song ...' >> /var/www/html/index.html
 CMD ["/usr/sbin/apache2ctl", "-DFOREGROUND"]
 EXPOSE 80
 ```
- docker build -t tag .
+- docker build -t tag .
 
-docker images  (tag:latest)
-docker run -d -p 9998:80 tag:latest
-docker stop 79880483fa2f04b371cf87f22a07892972630dac39de7ae8572b9affb415b7ab
+- docker images  (tag:latest)
+- docker run -d -p 9998:80 tag:latest
+- docker stop 79880483fa2f04b371cf87f22a07892972630dac39de7ae8572b9affb415b7ab
 
 
  
 
 
-docker ps -a -q
-docker stop e2d3afb4b1d5
-docker rm e2d3afb4b1d5
+- docker ps -a -q
+- docker stop e2d3afb4b1d5
+- docker rm e2d3afb4b1d5
 
 ## PART 2 ##
 index.html
