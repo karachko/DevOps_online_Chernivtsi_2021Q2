@@ -61,7 +61,59 @@ EXPOSE 80
 - docker rm e2d3afb4b1d5
 
 ## PART 2 ##
-index.html
+- I created a Python Flask app that displays random cat pix
+- mkdir flask-app 
+- cd flask-app
+
+- nano Dockerfile
+
+```
+# our base image
+FROM alpine:3.5
+# Install python and pip
+RUN apk add --update py2-pip
+# upgrade pip
+RUN pip install --upgrade pip
+# install Python modules needed by the Python app
+COPY requirements.txt /usr/src/app/
+RUN pip install --no-cache-dir -r /usr/src/app/requirements.txt
+# copy files required for the app to run
+COPY app.py /usr/src/app/
+COPY templates/index.html /usr/src/app/templates/
+# tell the port number the container should expose
+EXPOSE 5000
+# run the application
+CMD ["python", "/usr/src/app/app.py"]
+
+```
+- nano requirements.txt
+```
+Flask==0.10.1
+```
+
+- app.py
+```
+from flask import Flask, render_template
+import random
+app = Flask(__name__)
+
+images = [ "https://media.giphy.com/media/jpbnoe3UIa8TU8LM13/giphy.gif",
+           "https://media.giphy.com/media/VbnUQpnihPSIgIXuZv/giphy.gif",
+           "https://media.giphy.com/media/lJNoBCvQYp7nq/giphy.gif"
+]
+
+@app.route('/')
+def index():
+    url = random.choice(images)
+    return render_template('index.html',url=url)
+
+if __name__ == '__main__':
+    app.run(host="0.0.0.0")
+
+
+```
+
+- nano templates/index.html
 ```
 <html>
 <head>
@@ -96,28 +148,9 @@ text-transform: uppercase;
 
 
 
-app.py
-```
-from flask import Flask, render_template
-import random
-app = Flask(__name__)
 
-images = [ "https://media.giphy.com/media/jpbnoe3UIa8TU8LM13/giphy.gif",
-           "https://media.giphy.com/media/VbnUQpnihPSIgIXuZv/giphy.gif",
-           "https://media.giphy.com/media/lJNoBCvQYp7nq/giphy.gif"
-]
-
-@app.route('/')
-def index():
-    url = random.choice(images)
-    return render_template('index.html',url=url)
-
-if __name__ == '__main__':
-    app.run(host="0.0.0.0")
-
-
-```
 
 docker build -t tag1 .
 docker run -d -p 8889:5000 tag1:latest
 http://54.167.2.109:8889/
+
