@@ -1,7 +1,6 @@
 # PART1 #
-https://651480111647.signin.aws.amazon.com/console
 1.I installed EC2-Docker
-I selected EC2 from All services on AWS
+- I selected EC2 from All services on AWS
 - I selected Ubuntu Server 18.04 LTS
 - I chose Instant Type t2.micro
 - I pressed the button Next
@@ -15,20 +14,19 @@ I selected EC2 from All services on AWS
 - I entered the Dockerkey and pressed the button Download Key Dockerkey.pem.
 - sudo usermod -aG sudo ubuntu
 2. I installed Docker on the EC2-Docker
-sudo apt-get update
-sudo apt-get install apt-transport-https ca-certificates curl software-properties-common
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-sudo apt-key fingerprint 0EBFCD88
-sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
-sudo apt-get update
- sudo apt-get install docker-ce docker-ce-cli containerd.io
+- sudo apt-get update
+- sudo apt-get install apt-transport-https ca-certificates curl software-properties-common
+- curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+- sudo apt-key fingerprint 0EBFCD88
+- sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+- sudo apt-get update
+- sudo apt-get install docker-ce docker-ce-cli containerd.io
 
-I created user student  on the EC2-Docker
-
-- sudo useradd student
-- sudo passwd student
-- sudo mkdir /home/student
-- sudo chown student:student /home/student
+- I created user student  on the EC2-Docker
+    - sudo useradd student
+    - sudo passwd student
+    - sudo mkdir /home/student
+    - sudo chown student:student /home/student
 
 I added a user to the “docker” group
 -sudo usermod -aG docker student
